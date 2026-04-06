@@ -1,0 +1,23 @@
+Enunciado: 
+
+En un supermercado de la Ciudad se desea obtener una estadística de las compras realizadas en
+un período de tiempo en las diferentes sucursales que posee. La información se encuentra
+almacenada en un archivo COMPRAS cuyo formato de registro es el siguiente (archivo csv):
+SUCURSAL (PRSUC)
+CODIGO DE PRODUCTO (PRCOD)
+FECHA DE COMPRA (PRFEC)
+PROVEEDOR (PRPROV)
+CANTIDAD COMPRADA (PRCANT)
+PRECIO UNITARIO COMPRA (PRPRE)
+
+La información se encuentra ordenada por código de sucursal, producto, fecha de compra y
+proveedor.
+Se debe obtener información sobre:
+a) POR PRODUCTO: De cada producto comprado en cada sucursal indicar el total comprado
+en unidades (TOTUNI) y en pesos (TOTPES)
+b) POR SUCURSAL: l informar el total comprado en unidades (TOTSUC) y el producto de
+mayor (MYPROD, MYIMPOR) y menor compra (MNPRO,MNIMPOR) en pesos.
+c) Por otro lado indicar a nivel total: total de sucursales del supermercado (CANSUC) y
+compra total en pesos de todas las sucursales (TOTALIMP)
+
+Imprimir los resultados obtenidos.
