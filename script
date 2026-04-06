@@ -1,0 +1,84 @@
+import csv
+
+archivo = "COMPRAS_supermercado.csv"
+
+por_producto = {}
+tot_unidades_sucursal = {}
+pesos_por_sucursal_producto = {}
+total_imp = 0
+
+with open(archivo, newline="", encoding="utf-8") as f:
+    lector = csv.DictReader(f)
+
+    for fila in lector:
+        sucursal = fila["PRSUC"]
+        producto = fila["PRCOD"]
+        cantidad = int(fila["PRCANT"])
+        precio = float(fila["PRPRE"])
+        importe = cantidad * precio
+
+        clave = (sucursal, producto)
+        if clave not in por_producto:
+            por_producto[clave] = [0, 0]
+
+        por_producto[clave][0] += cantidad
+        por_producto[clave][1] += importe
+
+
+        if sucursal not in tot_unidades_sucursal:
+            tot_unidades_sucursal[sucursal] = 0
+
+        tot_unidades_sucursal[sucursal] += cantidad
+
+
+        if sucursal not in pesos_por_sucursal_producto:
+            pesos_por_sucursal_producto[sucursal] = {}
+
+        if producto not in pesos_por_sucursal_producto[sucursal]:
+            pesos_por_sucursal_producto[sucursal][producto] = 0
+
+        pesos_por_sucursal_producto[sucursal][producto] += importe
+
+
+        total_imp += importe
+
+print("A) POR PRODUCTO")
+for clave in sorted(por_producto):
+    sucursal, producto = clave
+    totuni = por_producto[clave][0]
+    totpes = por_producto[clave][1]
+
+    print("Sucursal:", sucursal,
+          "Producto:", producto,
+          "TOTUNI:", totuni,
+          "TOTPES: $", round(totpes, 2))
+
+print("\nB) POR SUCURSAL")
+for sucursal in sorted(tot_unidades_sucursal):
+    productos = pesos_por_sucursal_producto[sucursal]
+
+    mayor_producto = None
+    mayor_importe = None
+    menor_producto = None
+    menor_importe = None
+
+    for producto in productos:
+        importe = productos[producto]
+
+        if mayor_importe is None or importe > mayor_importe:
+            mayor_importe = importe
+            mayor_producto = producto
+
+        if menor_importe is None or importe < menor_importe:
+            menor_importe = importe
+            menor_producto = producto
+
+    print("Sucursal:", sucursal)
+    print("TOTSUC:", tot_unidades_sucursal[sucursal])
+    print("MYPROD:", mayor_producto, "MYIMPOR: $", round(mayor_importe, 2))
+    print("MNPRO:", menor_producto, "MNIMPOR: $", round(menor_importe, 2))
+
+print("\nC) TOTAL GENERAL")
+print("CANSUC:", len(tot_unidades_sucursal))
+print("TOTALIMP: $", round(total_imp, 2))
+
