@@ -20,3 +20,5 @@ with open('COMPRAS_ordenado.csv', 'w', newline='') as f:
     escritor = csv.writer(f)
     escritor.writerow(header)
     escritor.writerows(filas)
+
+print("Archivo 'COMPRAS_ordenado.csv' ordenado con éxito.")
