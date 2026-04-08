@@ -3,7 +3,7 @@ import pandas as pd
 df = pd.read_csv('COMPRAS_supermercado.csv')
 datos = df.to_dict('records')
 
-# Punto C (Total)
+# Punto C (Total Supermercado)
 TOTALIMP = 0
 CANSUC = 0
 i = 0
