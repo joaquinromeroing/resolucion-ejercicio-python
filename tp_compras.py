@@ -1,87 +1,107 @@
 import csv
 
-
+def ordenar_burbuja(lista):
+    n = len(lista)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if lista[j]["PRSUC"] > lista[j + 1]["PRSUC"]:
+                lista[j], lista[j + 1] = lista[j + 1], lista[j]
+    return lista
 
 def leer_registro(archivo):
     try:
-        reg = next(archivo)  
-        reg["PRCANT"] = int(reg["PRCANT"])      
-        reg["PRPRE"] = float(reg["PRPRE"])      
+        reg = next(archivo)
+        reg["PRCANT"] = int(reg["PRCANT"])
+        reg["PRPRE"] = float(reg["PRPRE"])
         return reg
     except StopIteration:
-        return None   
+        return None
 
-# Abro el archivo csv
-with open("COMPRAS_supermercado.csv", newline="", encoding="utf-8") as f:
-    archivo = csv.DictReader(f)   
+path = input("Ingrese el path del CSV: ")
+ordenado = input("El archivo está ordenado? (Y/N): ")
 
-    reg = leer_registro(archivo)  
+if ordenado.upper() == "N":
 
-    
-    cantsucursales = 0      # cantidad total de sucursales
-    totalimporte = 0    # importe total en pesos de todas las sucursales
+    lista = []
 
-    # Mientras haya registros para procesar
-    while reg is not None:
-        sucursal_actual = reg["PRSUC"]   # guardo la sucursal actual
-        totsucursal = 0                  # total de unidades de esta sucursal
-        mayor_inicializado = False       # sirve para inicializar maximo y minimo
+    with open(path, newline="", encoding="utf-8") as f:
+        archivo = csv.DictReader(f)
 
-        print(f"\nSUCURSAL: {sucursal_actual}")
+        for fila in archivo:
+            fila["PRCANT"] = int(fila["PRCANT"])
+            fila["PRPRE"] = float(fila["PRPRE"])
+            lista.append(fila)
 
-        # Mientras siga siendo la misma sucursal
-        while reg is not None and reg["PRSUC"] == sucursal_actual:
-            producto_actual = reg["PRCOD"]   # guardo el producto actual
-            totunidades= 0                       # total de unidades del producto
-            totpesos = 0                       # total en pesos del producto
+    lista = ordenar_burbuja(lista)
 
-            # Mientras siga siendo la misma sucursal y el mismo producto
-            while reg is not None and reg["PRSUC"] == sucursal_actual and reg["PRCOD"] == producto_actual:
-                importe = reg["PRCANT"] * reg["PRPRE"]   # importe de esa compra
+    temp_path = "temp_ordenado.csv"
 
-                # Acumulo para el producto
-                totunidades += reg["PRCANT"]
-                totpesos += importe
+    with open(temp_path, "w", newline="", encoding="utf-8") as f:
+        campos = ["PRSUC", "PRCOD", "PRFEC", "PRPROV", "PRCANT", "PRPRE"]
+        writer = csv.DictWriter(f, fieldnames=campos)
 
-                # Leo el siguiente registro
-                reg = leer_registro(archivo)
+        writer.writeheader()
+        for fila in lista:
+            writer.writerow(fila)
 
-            # Cuando termina el producto, lo informo
-            print(f"  PRODUCTO: {producto_actual} | TOTUNI: {totunidades} | TOTPES: ${totpesos:.2f}")
+    archivo_final = open(temp_path, newline="", encoding="utf-8")
 
-            # Acumulo al total de la sucursal
-            totsucursal += totunidades
+else:
+    archivo_final = open(path, newline="", encoding="utf-8")
 
-            # Acumulo al total general en pesos
-            totalimporte += totpesos
+archivo = csv.DictReader(archivo_final)
 
-            # Inicializo maximo y minimo con el primer producto de la sucursal
-            if mayor_inicializado == False:
+reg = leer_registro(archivo)
+
+cantsucursales = 0
+totalimporte = 0
+
+while reg is not None:
+    sucursal_actual = reg["PRSUC"]
+    totsucursales = 0
+    mayor_inicializado = False
+
+    print(f"\nSUCURSAL: {sucursal_actual}")
+
+    while reg is not None and reg["PRSUC"] == sucursal_actual:
+        producto_actual = reg["PRCOD"]
+        totunidades = 0
+        totpesos = 0
+
+        while reg is not None and reg["PRSUC"] == sucursal_actual and reg["PRCOD"] == producto_actual:
+            importe = reg["PRCANT"] * reg["PRPRE"]
+
+            totunidades += reg["PRCANT"]
+            totpesos += importe
+
+            reg = leer_registro(archivo)
+
+        print(f"  PRODUCTO: {producto_actual} | TOTUNI: {totunidades} | TOTPES: ${totpesos:.2f}")
+
+        totsucursales += totunidades
+        totalimporte += totpesos
+
+        if not mayor_inicializado:
+            mayor_prod = producto_actual
+            mayor_importe = totpesos
+            menor_prod = producto_actual
+            menor_importe = totpesos
+            mayor_inicializado = True
+        else:
+            if totpesos > mayor_importe:
                 mayor_prod = producto_actual
                 mayor_importe = totpesos
+
+            if totpesos < menor_importe:
                 menor_prod = producto_actual
                 menor_importe = totpesos
-                mayor_inicializado = True
-            else:
-                # Comparo para ver si este producto pasa a ser el de mayor compra
-                if totpesos > mayor_importe:
-                    mayor_prod = producto_actual
-                    mayor_importe = totpesos
 
-                # Comparo para ver si este producto pasa a ser el de menor compra
-                if totpesos < menor_importe:
-                    menor_prod = producto_actual
-                    menor_importe = totpesos
+    print(f"TOTAL UNIDADES SUCURSAL: {totsucursales}")
+    print(f"MAYOR COMPRA: {mayor_prod} -> ${mayor_importe:.2f}")
+    print(f"MENOR COMPRA: {menor_prod} -> ${menor_importe:.2f}")
 
-        # Cuando termina la sucursal, muestro sus resultados
-        print(f"TOTAL UNIDADES SUCURSAL: {totsucursal}")
-        print(f"MAYOR COMPRA: {mayor_prod} -> ${mayor_importe:.2f}")
-        print(f"MENOR COMPRA: {menor_prod} -> ${menor_importe:.2f}")
+    cantsucursales += 1
 
-        # Cuento una sucursal mas
-        cantsucursales += 1
-
-    # Cuando termina todo el archivo, muestro los totales generales
-    print("\n--- TOTALES GENERALES ---")
-    print(f"CANTIDAD DE SUCURSALES: {cantsucursales}")
-    print(f"TOTAL EN PESOS: ${totalimporte:.2f}")
+print("\n--- TOTALES GENERALES ---")
+print(f"CANTIDAD DE SUCURSALES: {cantsucursales}")
+print(f"TOTAL EN PESOS: ${totalimporte:.2f}")
