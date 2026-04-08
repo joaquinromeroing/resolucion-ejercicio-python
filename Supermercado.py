@@ -1,3 +1,8 @@
+import pandas as pd
+
+df = pd.read_csv('COMPRAS_supermercado.csv')
+datos = df.to_dict('records')
+
 # Punto C (Total)
 TOTALIMP = 0
 CANSUC = 0
