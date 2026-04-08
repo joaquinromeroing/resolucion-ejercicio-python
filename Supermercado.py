@@ -1,7 +1,33 @@
 import pandas as pd
+import os
 
-df = pd.read_csv('COMPRAS_supermercado.csv')
-datos = df.to_dict('records')
+# --- FUNCIÓN DE ORDENAMIENTO (Burbuja) ---
+def ordenar_por_burbuja(lista):
+    n = len(lista)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if lista[j]['PRSUC'] > lista[j+1]['PRSUC']:
+                lista[j], lista[j+1] = lista[j+1], lista[j]
+    return lista
+
+# --- MENÚ INICIAL  ---
+path_archivo = input("Indique el path del csv: ")
+esta_ordenado = input("¿El archivo está ordenado? (Y/N): ").upper()
+
+if esta_ordenado == 'N':
+    print("Ordenando archivo...")
+    df = pd.read_csv(path_archivo)
+    datos_dict = df.to_dict('records')
+    datos_ordenados = ordenar_por_burbuja(datos_dict)
+    
+    # Grabamos el temporal
+    path_archivo = 'temp_archivo_ordenado.csv'
+    pd.DataFrame(datos_ordenados).to_csv(path_archivo, index=False)
+    print(f"Archivo ordenado temporalmente en: {path_archivo}")
+
+# --- PROCESAMIENTO ORIGINAL (Corte de Control) ---
+df_final = pd.read_csv(path_archivo)
+datos = df_final.to_dict('records')
 
 # Punto C (Total Supermercado)
 TOTALIMP = 0
