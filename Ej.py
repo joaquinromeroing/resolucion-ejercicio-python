@@ -1,6 +1,6 @@
 import csv
 
-archivo = open("COMPRAS_supermercado.csv", "r", newline="", encoding="utf-8")
+archivo = open("COMPRAS_supermercado_ordenado.csv", "r", newline="", encoding="utf-8")
 reader = csv.DictReader(archivo)
 
 reg = next(reader, None)
