@@ -1,95 +1,100 @@
+import csv
 
-# reviso el archivo
+# 1. FUNCIÓN DE BURBUJA (Desarrollada, sin usar .sort())
+def funcion_burbuja(datos):
+    n = len(datos)
+    for i in range(n):
+        swapped = False
+        for j in range(0, n - i - 1):
+            # Criterio: Sucursal (0) y Producto (1)
+            if (datos[j][0], datos[j][1]) > (datos[j+1][0], datos[j+1][1]):
+                datos[j], datos[j+1] = datos[j+1], datos[j]
+                swapped = True
+        if not swapped:
+            break
+    return datos
 
-archivo = open('Tp1/COMPRAS_supermercado.csv', 'r', encoding='utf-8')
-
-for i in range(6):
+# 2. TU LÓGICA ORIGINAL DE WHILES (Encapsulada para que el menú la llame)
+def ejecutar_analisis_original(path_archivo):
+    print(f"\n--- Iniciando ejecución desde: {path_archivo} ---")
+    archivo = open(path_archivo, 'r', encoding='utf-8')
+    encabezado = archivo.readline()
+    
+    CANSUC = 0
+    TOTALIMP = 0.0
     linea = archivo.readline()
-    print(linea.strip()) 
 
-archivo.close()
-
-# whiles anidados
-
-archivo = open('Tp1/COMPRAS_supermercado.csv', 'r', encoding='utf-8')
-encabezado = archivo.readline()
-#Primeros acumuladores, de sucursales.
-CANSUC = 0
-TOTALIMP = 0.0
-
-linea = archivo.readline()
-
-while linea != "":
-    datos = linea.strip().split(',')
-    sucursal_actual = datos[0]
-    #suma de sucursales
-    CANSUC = CANSUC + 1
-    #total unidades de sucursales
-    TOTSUC = 0
-    #acumuladores de sucursales, sobre prod e importe
-    MYIMPOR = 0.0
-    MYPROD = ""
-    MNIMPOR = 0.0
-    MNPRO = ""
-    
-    
-    primer_producto = True 
-    
-    print("SUCURSAL:", sucursal_actual)
-    
-    while linea != "" and datos[0] == sucursal_actual:
-        producto_actual = datos[1]
+    while linea != "":
+        datos = linea.strip().split(',')
+        sucursal_actual = datos[0]
+        CANSUC += 1
+        TOTSUC = 0
+        MYIMPOR = 0.0
+        MYPROD = ""
+        MNIMPOR = 0.0
+        MNPRO = ""
+        primer_producto = True 
         
-        TOTUNI = 0
-        TOTPES = 0.0
+        print("\nSUCURSAL:", sucursal_actual)
         
-        while linea != "" and datos[0] == sucursal_actual and datos[1] == producto_actual:
-            cantidad = int(datos[4])
-            precio = float(datos[5])
-            importe = cantidad * precio
-            #acumuladores de prod
-            TOTUNI = TOTUNI + cantidad
-            TOTPES = TOTPES + importe
+        while linea != "" and datos[0] == sucursal_actual:
+            producto_actual = datos[1]
+            TOTUNI = 0
+            TOTPES = 0.0
             
-            linea = archivo.readline()
-            if linea != "":
-                datos = linea.strip().split(',')
-        
-        print("Prod:", producto_actual, " Unidades:", TOTUNI, " Pesos: $", round(TOTPES, 2))
-        #acumuladores finales
-        TOTSUC = TOTSUC + TOTUNI
-        TOTALIMP = TOTALIMP + TOTPES
-        
-        # aca arrancamos la comparacion de mayor/menor importe/producto
-
-        #esto es solo para el primer producto, va a ocupar las primeras variables
-        if primer_producto == True:
+            while linea != "" and datos[0] == sucursal_actual and datos[1] == producto_actual:
+                TOTUNI += int(datos[4])
+                TOTPES += float(datos[4]) * float(datos[5])
+                linea = archivo.readline()
+                if linea != "": datos = linea.strip().split(',')
             
-            MYIMPOR = TOTPES
-            MNIMPOR = TOTPES
-            MYPROD = producto_actual
-            MNPRO = producto_actual
-            
-            #aca pasa a false y no va entrar ningun otro, queremos que se comparen con el producto establecido antes
-            primer_producto = False 
-        else:
-            #a partir del segundo producto, comparamos normalmente
-            if TOTPES > MYIMPOR:
-                MYIMPOR = TOTPES
-                MYPROD = producto_actual
-                
-            if TOTPES < MNIMPOR:
-                MNIMPOR = TOTPES
-                MNPRO = producto_actual
+            print(f"Prod: {producto_actual} Unidades: {TOTUNI} Pesos: ${round(TOTPES, 2)}")
+            TOTSUC += TOTUNI
+            TOTALIMP += TOTPES
 
-    print("RESUMEN SUCURSAL", sucursal_actual)
-    print("Total unidades (TOTSUC):", TOTSUC)
-    print("Mayor compra: Prod.", MYPROD, "con $", round(MYIMPOR, 2))
-    print("Menor compra: Prod.", MNPRO, "con $", round(MNIMPOR, 2))
+            if primer_producto:
+                MYIMPOR = MNIMPOR = TOTPES
+                MYPROD = MNPRO = producto_actual
+                primer_producto = False 
+            else:
+                if TOTPES > MYIMPOR:
+                    MYIMPOR = TOTPES
+                    MYPROD = producto_actual
+                if TOTPES < MNIMPOR:
+                    MNIMPOR = TOTPES
+                    MNPRO = producto_actual
 
+        print(f"RESUMEN SUCURSAL {sucursal_actual}")
+        print(f"Total unidades (TOTSUC): {TOTSUC}")
+        print(f"Mayor compra: Prod. {MYPROD} con ${round(MYIMPOR, 2)}")
+        print(f"Menor compra: Prod. {MNPRO} con ${round(MNIMPOR, 2)}")
+    
+    archivo.close()
 
-print("TOTALES GENERALES")
-print("Total sucursales (CANSUC):", CANSUC)
-print("Compra total pesos (TOTALIMP): $", round(TOTALIMP, 2))
+# 3. FUNCIONALIDAD DE MENÚ (Requisito del paso 2)
+def menu():
+    path = input("Indique el path del csv: ")
+    ordenado = input("El archivo esta ordenado (Y/N): ").upper()
 
-archivo.close()
+    if ordenado == 'N':
+        print("Ordenando archivo con Burbuja... (paciente, son 10.000 filas)")
+        with open(path, mode='r', encoding='utf-8') as f:
+            reader = csv.reader(f)
+            header = next(reader)
+            datos_lista = list(reader)
+        
+        datos_ordenados = funcion_burbuja(datos_lista)
+        
+        # Archivo temporal para la ejecución
+        temp_path = "temp_archivo_ordenado.csv"
+        with open(temp_path, mode='w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(header)
+            writer.writerows(datos_ordenados)
+        
+        ejecutar_analisis_original(temp_path)
+    else:
+        ejecutar_analisis_original(path)
+
+if __name__ == "__main__":
+    menu()
