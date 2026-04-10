@@ -1,3 +1,5 @@
+# Script redundante ya que corte_control ahora hace todo el proceso, pero se deja porque lo pide el paso 1
+
 import csv
 
 archivo_entrada = "COMPRAS_supermercado_desordenado_solo_sucursal.csv"
