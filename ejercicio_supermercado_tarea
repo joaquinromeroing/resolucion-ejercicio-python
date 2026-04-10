@@ -1,58 +1,149 @@
 import csv
+import os
 
+# Abrimos el archivo
 with open('COMPRAS_supermercado.csv', mode='r', encoding='utf-8') as archivo:
     lector = csv.reader(archivo)
-    next(lector) #Saltamos encabezado
-    #Convertimos a lista para poder navegar por indices con while
+    next(lector)  # Saltamos el encabezado si existe
+    # Convertimos a lista para poder navegar por índices con while
     filas = list(lector)
-
-i = 0 #El indice de la fila actual 
-n = len(filas) #Cantidad de filas totales en el archivo
-
-
-CANSUC = 0 #Contador de sucursales 
-TOTALIMP = 0 #Importe total de TODAS las sucursales #Ambos son totales globales, no de una sucursal
-while i < n: #WHILE PARA SABER CUANDO CORTAR EN GENERAL
-    sucursal_actual = filas[i][0]
-    print(f"SUCURSAL {sucursal_actual}:")
-    MYPROD = ""
-    MYIMPOR = 0
-    MNPROD = ""
-    MNIMPOR = float("inf") #Es infinito 
-    TOTSUC = 0 
-    while i < n and filas[i][0] == sucursal_actual: #WHILE SUCURSAL
-        producto_actual = filas[i][1]
-        TOTPES = 0 #Total en pesos del producto vendido
-        TOTUNI = 0 #Cantidad del producto vendido 
-        while i < n and filas[i][0] == sucursal_actual and filas[i][1] == producto_actual: #WHILE PRODUCTO
-            TOTUNI += int(filas[i][4]) #Total comprado en unidades
-            TOTPES += int(filas[i][4]) * float(filas[i][5]) #Total comprado en pesos
-            i += 1 #Avanzamos a la siguiente fila
-        #Ahora queremos chequear maximo y minimo
-        if TOTPES > MYIMPOR: #MAXIMO
-            MYPROD = producto_actual 
-            MYIMPOR = TOTPES
-            
-        if TOTPES < MNIMPOR: #MINIMO
-            MNPROD = producto_actual
-            MNIMPOR = TOTPES
-        #Ahora que estamos por cambiar de producto, mostramos lo que se nos pidio para cada producto
-        print(f"-Producto: {producto_actual}")
-        print(f"  Unidades compradas: {TOTUNI} | Importe total comprado: ${TOTPES}")
-        
-
-        #TOTSUC = cantidad de productos vendidos por sucursal
-        TOTSUC += TOTUNI
-        TOTALIMP += TOTPES #Sumo cada importe de cada producto al total de los importes de todas las sucursales 
-
     
-    CANSUC += 1 #Cuenta cuántas sucursales procesaste.
-    #Ahora que estamos por cambiar de sucursal, mostramos lo que se nos pidio para cada sucursal
-    print(f"   Total unidades en sucursal: {TOTSUC}")
-    print(f"   Mayor compra: {MYPROD} -> ${MYIMPOR}")
-    print(f"   Menor compra: {MNPROD} -> ${MNIMPOR}")
-    print("-------------------------------------------------")
+i = 0
+n = len(filas)
 
-print(f"Total de sucursales del supermercado: {CANSUC}")
-print(f"Compra total de todas las sucursales en conjunto: ${TOTALIMP}")
+CANSUC = 0 #Cantidad sucursales
+TOTALIMP = 0 #Total Importe de todas las sucursales
+
+#Recorremos mientras haya filas restantes
+while i < n:
+    sucursal_act = filas[i][0]
+    print(f"Recorriendo sucursal : {sucursal_act}")
+    MYPROD, MYIMPOR = "",0
+    MNPRO,MNIMPOR = "",float('inf')
+    TOTSUC = 0
+    while i<n and filas[i][0] == sucursal_act:
+        #Segumos en la misma sucursal
+        producto_act = filas[i][1]
+        TOTPES = 0
+        TOTUNI = 0
+        while i<n and filas[i][0] == sucursal_act and filas[i][1] == producto_act:
+            #Seguimos en el mismo producto
+            TOTPES += int(filas[i][4]) * float(filas[i][5]) #Acumulamos el importe comprado
+            TOTUNI += int(filas[i][4]) #Acumulamos la cantidad comprada
+            i += 1
+        #Cambio de producto
+        #Chequeamos que el producto anterior era el mas caro o mas barato de la sucursal
+        if TOTPES > MYIMPOR:
+            MYPROD = producto_act
+            MYIMPOR = TOTPES
+
+        if TOTPES < MNIMPOR:
+            MNPRO = producto_act
+            MNIMPOR = TOTPES
+
+        print(f'Sucursal:{sucursal_act}-Producto:{producto_act}-Importe Total: ${TOTPES}-Total Unidades: {TOTUNI}')
+
+        TOTSUC += TOTUNI  #Acumulamos las unidades compradas del producto a la sucrusal
+        TOTALIMP += TOTPES #Acumulamos el importe total del producto al acumulador global
+    #Reporte fin de sucursal
+    CANSUC += 1
+    print(f"--- RESUMEN {sucursal_act} ---")
+    print(f"Unidades Vendidas: {TOTSUC}")
+    print(f"Mayor Producto: {MYPROD} (${MYIMPOR:.2f})")
+    print(f"Menor Producto: {MNPRO} (${MNIMPOR:.2f})")
+    print("----------------------------------------------")
+
+print(f"\nTOTAL DE SUCURSALES: {CANSUC}")
+print(f"TOTAL GENERAL DE TODAS LAS SUCURSALES: ${TOTALIMP:.2f}")
+    
+def ordenar_burbuja(filas):
+    """Implementación de burbuja para ordenar por Sucursal"""
+    n = len(filas)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            # Ordenamos por sucursal, y si son iguales, por producto
+            if filas[j][0] > filas[j + 1][0]:
+                filas[j], filas[j + 1] = filas[j + 1], filas[j]
+            elif filas[j][0] == filas[j + 1][0] and filas[j][1] > filas[j + 1][1]:
+                filas[j], filas[j + 1] = filas[j + 1], filas[j]
+    return filas
+
+def procesar_datos(filas):
+    """La lógica original de procesamiento de sucursales y productos"""
+    i = 0
+    n = len(filas)
+    CANSUC = 0
+    TOTALIMP = 0
+
+    while i < n:
+        sucursal_act = filas[i][0]
+        print(f"\nRecorriendo sucursal : {sucursal_act}")
+        MYPROD, MYIMPOR = "", 0
+        MNPRO, MNIMPOR = "", float('inf')
+        TOTSUC = 0
+        
+        while i < n and filas[i][0] == sucursal_act:
+            producto_act = filas[i][1]
+            TOTPES = 0
+            TOTUNI = 0
+            while i < n and filas[i][0] == sucursal_act and filas[i][1] == producto_act:
+                TOTPES += int(filas[i][4]) * float(filas[i][5])
+                TOTUNI += int(filas[i][4])
+                i += 1
+            
+            if TOTPES > MYIMPOR:
+                MYPROD = producto_act
+                MYIMPOR = TOTPES
+            if TOTPES < MNIMPOR:
+                MNPRO = producto_act
+                MNIMPOR = TOTPES
+
+            print(f'Sucursal:{sucursal_act} - Producto:{producto_act} - Importe Total: ${TOTPES:.2f} - Total Unidades: {TOTUNI}')
+            TOTSUC += TOTUNI
+            TOTALIMP += TOTPES
+
+        CANSUC += 1
+        print(f"--- RESUMEN {sucursal_act} ---")
+        print(f"Unidades Vendidas: {TOTSUC}")
+        print(f"Mayor Producto: {MYPROD} (${MYIMPOR:.2f})")
+        print(f"Menor Producto: {MNPRO} (${MNIMPOR:.2f})")
+        print("----------------------------------------------")
+
+    print(f"\nTOTAL DE SUCURSALES: {CANSUC}")
+    print(f"TOTAL GENERAL DE TODAS LAS SUCURSALES: ${TOTALIMP:.2f}")
+
+
+# --- INICIO DEL PROGRAMA (MENÚ) ---
+path_archivo = input("Indique el path del csv: ")
+esta_ordenado = input("¿El archivo esta ordenado? (Y/N): ").upper()
+
+try:
+    with open(path_archivo, mode='r', encoding='utf-8') as archivo:
+        lector = csv.reader(archivo)
+        cabecera = next(lector)
+        filas = list(lector)
+
+    if esta_ordenado == 'N':
+        print("Ordenando archivo... por favor espere.")
+        filas_ordenadas = ordenar_burbuja(filas)
+        
+        # Grabamos el archivo temporal
+        path_temporal = "temp_ordenado.csv"
+        with open(path_temporal, mode='w', newline='', encoding='utf-8') as archivo_salida:
+            escritor = csv.writer(archivo_salida)
+            escritor.writerow(cabecera)
+            escritor.writerows(filas_ordenadas)
+        
+        print(f"Archivo ordenado guardado en: {path_temporal}")
+        # Trabajamos con las filas ya ordenadas en memoria
+        procesar_datos(filas_ordenadas)
+
+        os.remove(path_temporal) 
+        print(f"\nArchivo temporal {path_temporal} eliminado.")
+    else:
+        # Iniciar ejecución directamente
+        procesar_datos(filas)
+
+except FileNotFoundError:
+    print("Error: No se encontró el archivo. Verifique el path.")
 
