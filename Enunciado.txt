@@ -21,3 +21,4 @@ c) Por otro lado indicar a nivel total: total de sucursales del supermercado (CA
 compra total en pesos de todas las sucursales (TOTALIMP)
 
 Imprimir los resultados obtenidos.
+
