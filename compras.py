@@ -1,29 +1,55 @@
 import csv
+import os
 
 # ORDENAMIENTO (BURBUJA)
+
+
+def ordenar_burbuja(datos):
+    n = len(datos)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if (datos[j][0] > datos[j+1][0]) or (datos[j][0] == datos[j+1][0] and datos[j][1] > datos[j+1][1]):
+                datos[j], datos[j+1] = datos[j+1], datos[j]
+    return datos
+
+
+print("Menu de compras:")
+
+
+path_archivo = input("Ingrese el nombre del archivo CSV (ej: Compras_supermercado_Desordenado.csv): ")
+esta_ordenado = input("¿El archivo ya está ordenado? (s/n): ").upper()
+
+
+
 filas = []
-with open('Compras_supermercado_Desordenado.csv', 'r') as f:
-    lector = csv.reader(f)
-    header = next(lector)
-    for linea in lector:
-        filas.append(linea)
+if os.path.exists(path_archivo):
+    with open(path_archivo, 'r') as f:
+        lector = csv.reader(f)
+        header = next(lector)
+        for linea in lector:
+            filas.append(linea)
+        else:
+            print(f"Error: El archivo '{path_archivo}' no existe. Por favor, verifique el nombre.")
+            exit()
+    
+
+if esta_ordenado == 'N':
+    filas = ordenar_burbuja(filas)
+    with open('COMPRAS_ordenado.csv', 'w', newline='') as f:
+        escritor = csv.writer(f)
+        escritor.writerow(header)
+        escritor.writerows(filas)
+    print("Archivo 'COMPRAS_ordenado.csv' ordenado con éxito.")
+else:
+    print("ejecucion directa...")
+
+
+
 
 n = len(filas)
-
-for i in range(n):
-    for j in range(0, n - i - 1):
-        if (filas[j][0] > filas[j+1][0]) or (filas[j][0] == filas[j+1][0] and filas[j][1] > filas[j+1][1]):
-            filas[j], filas[j+1] = filas[j+1], filas[j]
-
-
-with open('COMPRAS_ordenado.csv', 'w', newline='') as f:
-    escritor = csv.writer(f)
-    escritor.writerow(header)
-    escritor.writerows(filas)
-
-# --- PARTE 2: CORTE DE CONTROL ---
-
 i = 0
+
+
 print(f"{'SUCURSAL':<10} | {'PRODUCTO':<10} | {'TOT_UNI':<8} | {'TOT_PES'}")
 print("-" * 50)
 
@@ -67,7 +93,7 @@ while i < n:
     mnpro = ""       
     mnimpor = float('inf') 
 
-    # Este bucle procesa TODA la sucursal actual 
+   
     while i < n and filas[i][0] == sucursal_actual:
         producto = filas[i][1]
         cantidad = int(filas[i][4])
