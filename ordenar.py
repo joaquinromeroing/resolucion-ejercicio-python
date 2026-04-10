@@ -1,4 +1,3 @@
-
 archivo = open("compras_supermercado_desordenado_solo_sucursal.csv", "r")
 linea = archivo.readline().strip()
 
