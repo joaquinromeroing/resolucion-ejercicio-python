@@ -1,7 +1,8 @@
 CANSUC   = 0
 TOTALIMP = 0.0
 
-archivo = open("/home/kali/Desktop/Austral/resolucion-ejercicio-python/ejercicio 2/datos_ordenados.csv", "r")
+archivo = open("/data/datos.csv", "r")
+salida  = open("/output/salida.txt", "w")
 archivo.readline()          # saltear encabezado
 linea = archivo.readline()
 
@@ -31,8 +32,10 @@ while linea:
             if linea:
                 campo = linea.strip().split(",")
 
-        print(f"  Sucursal: {sucursal_actual} | Producto: {producto_actual} | "
-              f"Unidades: {TOTUNI} | Importe: ${TOTPES:.2f}")
+        texto = (f"  Sucursal: {sucursal_actual} | Producto: {producto_actual} | "
+                 f"Unidades: {TOTUNI} | Importe: ${TOTPES:.2f}")
+        print(texto)
+        salida.write(texto + "\n")
 
         TOTSUC += TOTPES
 
@@ -45,12 +48,25 @@ while linea:
             MNPROD  = producto_actual
 
     TOTALIMP += TOTSUC
-    print(f"\nSucursal: {sucursal_actual} — Total importe: ${TOTSUC:.2f}")
-    print(f"  Mayor importe: {MYPROD} — ${MYIMPOR:.2f}")
-    print(f"  Menor importe: {MNPROD} — ${MNIMPOR:.2f}")
-    print("─" * 50)
+    texto1 = f"\nSucursal: {sucursal_actual} — Total importe: ${TOTSUC:.2f}"
+    texto2 = f"  Mayor importe: {MYPROD} — ${MYIMPOR:.2f}"
+    texto3 = f"  Menor importe: {MNPROD} — ${MNIMPOR:.2f}"
+    texto4 = "─" * 50
+    print(texto1)
+    print(texto2)
+    print(texto3)
+    print(texto4)
+    salida.write(texto1 + "\n")
+    salida.write(texto2 + "\n")
+    salida.write(texto3 + "\n")
+    salida.write(texto4 + "\n")
 
 archivo.close()
 
-print(f"\nTotal de sucursales procesadas : {CANSUC}")
-print(f"Importe total general          : ${TOTALIMP:.2f}")
+texto5 = f"\nTotal de sucursales procesadas : {CANSUC}"
+texto6 = f"Importe total general          : ${TOTALIMP:.2f}"
+print(texto5)
+print(texto6)
+salida.write(texto5 + "\n")
+salida.write(texto6 + "\n")
+salida.close()

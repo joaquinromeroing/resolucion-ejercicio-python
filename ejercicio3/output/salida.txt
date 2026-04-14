@@ -1,0 +1,453 @@
+  Sucursal: SUC01 | Producto: P100 | Unidades: 4015 | Importe: $1063022.53
+  Sucursal: SUC01 | Producto: P101 | Unidades: 2779 | Importe: $1051903.95
+  Sucursal: SUC01 | Producto: P102 | Unidades: 2063 | Importe: $1052493.76
+  Sucursal: SUC01 | Producto: P103 | Unidades: 2785 | Importe: $1648188.13
+  Sucursal: SUC01 | Producto: P104 | Unidades: 2712 | Importe: $2088022.61
+  Sucursal: SUC01 | Producto: P105 | Unidades: 2489 | Importe: $1902345.35
+  Sucursal: SUC01 | Producto: P106 | Unidades: 2398 | Importe: $2238944.61
+  Sucursal: SUC01 | Producto: P107 | Unidades: 2895 | Importe: $2902189.47
+  Sucursal: SUC01 | Producto: P108 | Unidades: 605 | Importe: $614157.07
+  Sucursal: SUC01 | Producto: P109 | Unidades: 948 | Importe: $1003512.65
+  Sucursal: SUC01 | Producto: P110 | Unidades: 1096 | Importe: $1313691.98
+  Sucursal: SUC01 | Producto: P111 | Unidades: 1116 | Importe: $1281715.32
+  Sucursal: SUC01 | Producto: P112 | Unidades: 881 | Importe: $1250955.61
+  Sucursal: SUC01 | Producto: P113 | Unidades: 1190 | Importe: $1484639.81
+  Sucursal: SUC01 | Producto: P114 | Unidades: 841 | Importe: $1380695.97
+  Sucursal: SUC01 | Producto: P115 | Unidades: 1012 | Importe: $1114421.74
+  Sucursal: SUC01 | Producto: P116 | Unidades: 504 | Importe: $755060.46
+  Sucursal: SUC01 | Producto: P117 | Unidades: 1065 | Importe: $2098615.27
+  Sucursal: SUC01 | Producto: P118 | Unidades: 608 | Importe: $1066226.21
+  Sucursal: SUC01 | Producto: P119 | Unidades: 809 | Importe: $1708845.18
+  Sucursal: SUC01 | Producto: P120 | Unidades: 923 | Importe: $1486815.94
+  Sucursal: SUC01 | Producto: P121 | Unidades: 925 | Importe: $1660782.84
+  Sucursal: SUC01 | Producto: P122 | Unidades: 1194 | Importe: $2051821.60
+  Sucursal: SUC01 | Producto: P123 | Unidades: 880 | Importe: $1843952.42
+  Sucursal: SUC01 | Producto: P124 | Unidades: 1143 | Importe: $2817349.31
+  Sucursal: SUC01 | Producto: P125 | Unidades: 798 | Importe: $2356655.13
+  Sucursal: SUC01 | Producto: P126 | Unidades: 899 | Importe: $2474869.14
+  Sucursal: SUC01 | Producto: P127 | Unidades: 1236 | Importe: $3162432.18
+  Sucursal: SUC01 | Producto: P128 | Unidades: 784 | Importe: $1917402.03
+  Sucursal: SUC01 | Producto: P129 | Unidades: 575 | Importe: $1862498.50
+  Sucursal: SUC01 | Producto: P130 | Unidades: 823 | Importe: $1654525.41
+  Sucursal: SUC01 | Producto: P131 | Unidades: 1105 | Importe: $3213342.73
+  Sucursal: SUC01 | Producto: P132 | Unidades: 350 | Importe: $494923.38
+  Sucursal: SUC01 | Producto: P133 | Unidades: 238 | Importe: $465853.40
+  Sucursal: SUC01 | Producto: P134 | Unidades: 142 | Importe: $320703.71
+  Sucursal: SUC01 | Producto: P135 | Unidades: 344 | Importe: $495946.99
+  Sucursal: SUC01 | Producto: P136 | Unidades: 183 | Importe: $397868.41
+  Sucursal: SUC01 | Producto: P137 | Unidades: 377 | Importe: $468536.30
+  Sucursal: SUC01 | Producto: P138 | Unidades: 554 | Importe: $669473.82
+  Sucursal: SUC01 | Producto: P139 | Unidades: 95 | Importe: $382187.83
+
+Sucursal: SUC01 — Total importe: $59217588.75
+  Mayor importe: P131 — $3213342.73
+  Menor importe: P134 — $320703.71
+──────────────────────────────────────────────────
+  Sucursal: SUC02 | Producto: P100 | Unidades: 1964 | Importe: $513656.53
+  Sucursal: SUC02 | Producto: P101 | Unidades: 1901 | Importe: $709471.95
+  Sucursal: SUC02 | Producto: P102 | Unidades: 1989 | Importe: $1017013.03
+  Sucursal: SUC02 | Producto: P103 | Unidades: 1447 | Importe: $837812.72
+  Sucursal: SUC02 | Producto: P104 | Unidades: 1904 | Importe: $1449893.51
+  Sucursal: SUC02 | Producto: P105 | Unidades: 2010 | Importe: $1430943.65
+  Sucursal: SUC02 | Producto: P106 | Unidades: 2371 | Importe: $2155968.91
+  Sucursal: SUC02 | Producto: P107 | Unidades: 1661 | Importe: $1542695.50
+  Sucursal: SUC02 | Producto: P108 | Unidades: 562 | Importe: $504920.45
+  Sucursal: SUC02 | Producto: P109 | Unidades: 774 | Importe: $736391.43
+  Sucursal: SUC02 | Producto: P110 | Unidades: 418 | Importe: $341879.05
+  Sucursal: SUC02 | Producto: P111 | Unidades: 927 | Importe: $841700.21
+  Sucursal: SUC02 | Producto: P112 | Unidades: 683 | Importe: $914491.05
+  Sucursal: SUC02 | Producto: P113 | Unidades: 922 | Importe: $775054.07
+  Sucursal: SUC02 | Producto: P114 | Unidades: 597 | Importe: $976054.50
+  Sucursal: SUC02 | Producto: P115 | Unidades: 694 | Importe: $530293.84
+  Sucursal: SUC02 | Producto: P116 | Unidades: 673 | Importe: $1003916.65
+  Sucursal: SUC02 | Producto: P117 | Unidades: 524 | Importe: $785135.16
+  Sucursal: SUC02 | Producto: P118 | Unidades: 585 | Importe: $983768.51
+  Sucursal: SUC02 | Producto: P119 | Unidades: 569 | Importe: $1148466.98
+  Sucursal: SUC02 | Producto: P120 | Unidades: 795 | Importe: $1583897.00
+  Sucursal: SUC02 | Producto: P121 | Unidades: 701 | Importe: $1393822.91
+  Sucursal: SUC02 | Producto: P122 | Unidades: 1181 | Importe: $1145357.44
+  Sucursal: SUC02 | Producto: P123 | Unidades: 457 | Importe: $711721.92
+  Sucursal: SUC02 | Producto: P124 | Unidades: 542 | Importe: $871818.28
+  Sucursal: SUC02 | Producto: P125 | Unidades: 241 | Importe: $634456.33
+  Sucursal: SUC02 | Producto: P126 | Unidades: 847 | Importe: $1975763.08
+  Sucursal: SUC02 | Producto: P127 | Unidades: 1175 | Importe: $1797447.72
+  Sucursal: SUC02 | Producto: P128 | Unidades: 731 | Importe: $1636480.11
+  Sucursal: SUC02 | Producto: P129 | Unidades: 392 | Importe: $1233540.36
+  Sucursal: SUC02 | Producto: P130 | Unidades: 609 | Importe: $1709195.29
+  Sucursal: SUC02 | Producto: P131 | Unidades: 357 | Importe: $849326.46
+  Sucursal: SUC02 | Producto: P132 | Unidades: 248 | Importe: $285076.69
+  Sucursal: SUC02 | Producto: P133 | Unidades: 282 | Importe: $298629.96
+  Sucursal: SUC02 | Producto: P134 | Unidades: 91 | Importe: $133580.53
+  Sucursal: SUC02 | Producto: P135 | Unidades: 474 | Importe: $392003.84
+  Sucursal: SUC02 | Producto: P136 | Unidades: 225 | Importe: $331404.37
+  Sucursal: SUC02 | Producto: P137 | Unidades: 57 | Importe: $101367.04
+  Sucursal: SUC02 | Producto: P138 | Unidades: 361 | Importe: $447383.08
+  Sucursal: SUC02 | Producto: P139 | Unidades: 170 | Importe: $468735.24
+
+Sucursal: SUC02 — Total importe: $37200535.35
+  Mayor importe: P106 — $2155968.91
+  Menor importe: P137 — $101367.04
+──────────────────────────────────────────────────
+  Sucursal: SUC03 | Producto: P100 | Unidades: 3092 | Importe: $822121.36
+  Sucursal: SUC03 | Producto: P101 | Unidades: 2975 | Importe: $1130535.32
+  Sucursal: SUC03 | Producto: P102 | Unidades: 3400 | Importe: $1734668.42
+  Sucursal: SUC03 | Producto: P103 | Unidades: 3435 | Importe: $2059999.69
+  Sucursal: SUC03 | Producto: P104 | Unidades: 2790 | Importe: $2156842.25
+  Sucursal: SUC03 | Producto: P105 | Unidades: 2906 | Importe: $2191256.19
+  Sucursal: SUC03 | Producto: P106 | Unidades: 3726 | Importe: $3427691.44
+  Sucursal: SUC03 | Producto: P107 | Unidades: 3100 | Importe: $3180598.70
+  Sucursal: SUC03 | Producto: P108 | Unidades: 681 | Importe: $619655.81
+  Sucursal: SUC03 | Producto: P109 | Unidades: 456 | Importe: $441953.09
+  Sucursal: SUC03 | Producto: P110 | Unidades: 653 | Importe: $658106.76
+  Sucursal: SUC03 | Producto: P111 | Unidades: 1398 | Importe: $1265073.50
+  Sucursal: SUC03 | Producto: P112 | Unidades: 750 | Importe: $967793.62
+  Sucursal: SUC03 | Producto: P113 | Unidades: 722 | Importe: $768165.41
+  Sucursal: SUC03 | Producto: P114 | Unidades: 554 | Importe: $611742.69
+  Sucursal: SUC03 | Producto: P115 | Unidades: 1239 | Importe: $1831816.01
+  Sucursal: SUC03 | Producto: P116 | Unidades: 806 | Importe: $1288622.77
+  Sucursal: SUC03 | Producto: P117 | Unidades: 999 | Importe: $1580259.69
+  Sucursal: SUC03 | Producto: P118 | Unidades: 1014 | Importe: $1939738.96
+  Sucursal: SUC03 | Producto: P119 | Unidades: 926 | Importe: $1954295.75
+  Sucursal: SUC03 | Producto: P120 | Unidades: 894 | Importe: $1633258.17
+  Sucursal: SUC03 | Producto: P121 | Unidades: 1278 | Importe: $2899336.25
+  Sucursal: SUC03 | Producto: P122 | Unidades: 755 | Importe: $1145879.38
+  Sucursal: SUC03 | Producto: P123 | Unidades: 969 | Importe: $2330104.66
+  Sucursal: SUC03 | Producto: P124 | Unidades: 813 | Importe: $1960735.51
+  Sucursal: SUC03 | Producto: P125 | Unidades: 707 | Importe: $2098221.91
+  Sucursal: SUC03 | Producto: P126 | Unidades: 797 | Importe: $2046928.43
+  Sucursal: SUC03 | Producto: P127 | Unidades: 1367 | Importe: $2002418.51
+  Sucursal: SUC03 | Producto: P128 | Unidades: 595 | Importe: $1913688.77
+  Sucursal: SUC03 | Producto: P129 | Unidades: 1032 | Importe: $3537428.31
+  Sucursal: SUC03 | Producto: P130 | Unidades: 1148 | Importe: $2851141.58
+  Sucursal: SUC03 | Producto: P131 | Unidades: 727 | Importe: $2167520.72
+  Sucursal: SUC03 | Producto: P132 | Unidades: 470 | Importe: $571689.31
+  Sucursal: SUC03 | Producto: P133 | Unidades: 197 | Importe: $432133.71
+  Sucursal: SUC03 | Producto: P134 | Unidades: 89 | Importe: $264632.85
+  Sucursal: SUC03 | Producto: P135 | Unidades: 221 | Importe: $637156.61
+  Sucursal: SUC03 | Producto: P136 | Unidades: 258 | Importe: $365330.13
+  Sucursal: SUC03 | Producto: P137 | Unidades: 434 | Importe: $522836.48
+  Sucursal: SUC03 | Producto: P138 | Unidades: 511 | Importe: $486532.02
+  Sucursal: SUC03 | Producto: P139 | Unidades: 170 | Importe: $368687.97
+
+Sucursal: SUC03 — Total importe: $60866598.71
+  Mayor importe: P129 — $3537428.31
+  Menor importe: P134 — $264632.85
+──────────────────────────────────────────────────
+  Sucursal: SUC04 | Producto: P100 | Unidades: 2296 | Importe: $609873.43
+  Sucursal: SUC04 | Producto: P101 | Unidades: 1616 | Importe: $619922.13
+  Sucursal: SUC04 | Producto: P102 | Unidades: 2442 | Importe: $1246688.31
+  Sucursal: SUC04 | Producto: P103 | Unidades: 2707 | Importe: $1584230.93
+  Sucursal: SUC04 | Producto: P104 | Unidades: 1556 | Importe: $1182533.79
+  Sucursal: SUC04 | Producto: P105 | Unidades: 2411 | Importe: $1858791.38
+  Sucursal: SUC04 | Producto: P106 | Unidades: 2790 | Importe: $2545515.52
+  Sucursal: SUC04 | Producto: P107 | Unidades: 2518 | Importe: $2477812.56
+  Sucursal: SUC04 | Producto: P108 | Unidades: 868 | Importe: $701191.41
+  Sucursal: SUC04 | Producto: P109 | Unidades: 1107 | Importe: $1069105.11
+  Sucursal: SUC04 | Producto: P110 | Unidades: 435 | Importe: $443446.69
+  Sucursal: SUC04 | Producto: P111 | Unidades: 801 | Importe: $573586.27
+  Sucursal: SUC04 | Producto: P112 | Unidades: 559 | Importe: $645024.13
+  Sucursal: SUC04 | Producto: P113 | Unidades: 726 | Importe: $673370.33
+  Sucursal: SUC04 | Producto: P114 | Unidades: 760 | Importe: $958762.19
+  Sucursal: SUC04 | Producto: P115 | Unidades: 638 | Importe: $669985.39
+  Sucursal: SUC04 | Producto: P116 | Unidades: 817 | Importe: $1306901.61
+  Sucursal: SUC04 | Producto: P117 | Unidades: 610 | Importe: $964568.55
+  Sucursal: SUC04 | Producto: P118 | Unidades: 638 | Importe: $965375.73
+  Sucursal: SUC04 | Producto: P119 | Unidades: 657 | Importe: $1133624.85
+  Sucursal: SUC04 | Producto: P120 | Unidades: 548 | Importe: $1107561.42
+  Sucursal: SUC04 | Producto: P121 | Unidades: 838 | Importe: $1675658.57
+  Sucursal: SUC04 | Producto: P122 | Unidades: 858 | Importe: $1094788.96
+  Sucursal: SUC04 | Producto: P123 | Unidades: 1173 | Importe: $1617774.75
+  Sucursal: SUC04 | Producto: P124 | Unidades: 808 | Importe: $1747462.36
+  Sucursal: SUC04 | Producto: P125 | Unidades: 461 | Importe: $1254115.23
+  Sucursal: SUC04 | Producto: P126 | Unidades: 771 | Importe: $1944352.63
+  Sucursal: SUC04 | Producto: P127 | Unidades: 1234 | Importe: $1446934.13
+  Sucursal: SUC04 | Producto: P128 | Unidades: 641 | Importe: $1501692.18
+  Sucursal: SUC04 | Producto: P129 | Unidades: 614 | Importe: $1915936.07
+  Sucursal: SUC04 | Producto: P130 | Unidades: 409 | Importe: $1254183.38
+  Sucursal: SUC04 | Producto: P131 | Unidades: 876 | Importe: $2156473.09
+  Sucursal: SUC04 | Producto: P132 | Unidades: 342 | Importe: $343080.20
+  Sucursal: SUC04 | Producto: P133 | Unidades: 402 | Importe: $649277.60
+  Sucursal: SUC04 | Producto: P134 | Unidades: 78 | Importe: $253937.79
+  Sucursal: SUC04 | Producto: P135 | Unidades: 212 | Importe: $406318.57
+  Sucursal: SUC04 | Producto: P136 | Unidades: 297 | Importe: $420732.00
+  Sucursal: SUC04 | Producto: P137 | Unidades: 258 | Importe: $181337.29
+  Sucursal: SUC04 | Producto: P138 | Unidades: 644 | Importe: $378570.58
+  Sucursal: SUC04 | Producto: P139 | Unidades: 110 | Importe: $301107.56
+
+Sucursal: SUC04 — Total importe: $43881604.67
+  Mayor importe: P106 — $2545515.52
+  Menor importe: P137 — $181337.29
+──────────────────────────────────────────────────
+  Sucursal: SUC05 | Producto: P100 | Unidades: 2083 | Importe: $546214.79
+  Sucursal: SUC05 | Producto: P101 | Unidades: 2101 | Importe: $785716.92
+  Sucursal: SUC05 | Producto: P102 | Unidades: 1865 | Importe: $941796.53
+  Sucursal: SUC05 | Producto: P103 | Unidades: 1842 | Importe: $1091460.25
+  Sucursal: SUC05 | Producto: P104 | Unidades: 1762 | Importe: $1327170.54
+  Sucursal: SUC05 | Producto: P105 | Unidades: 3066 | Importe: $2001715.15
+  Sucursal: SUC05 | Producto: P106 | Unidades: 1814 | Importe: $1665641.66
+  Sucursal: SUC05 | Producto: P107 | Unidades: 1433 | Importe: $1406907.86
+  Sucursal: SUC05 | Producto: P108 | Unidades: 727 | Importe: $619259.18
+  Sucursal: SUC05 | Producto: P109 | Unidades: 560 | Importe: $511729.48
+  Sucursal: SUC05 | Producto: P110 | Unidades: 495 | Importe: $538267.42
+  Sucursal: SUC05 | Producto: P111 | Unidades: 1016 | Importe: $655844.80
+  Sucursal: SUC05 | Producto: P112 | Unidades: 594 | Importe: $749224.31
+  Sucursal: SUC05 | Producto: P113 | Unidades: 802 | Importe: $662118.80
+  Sucursal: SUC05 | Producto: P114 | Unidades: 736 | Importe: $1028239.44
+  Sucursal: SUC05 | Producto: P115 | Unidades: 443 | Importe: $625746.73
+  Sucursal: SUC05 | Producto: P116 | Unidades: 424 | Importe: $449301.09
+  Sucursal: SUC05 | Producto: P117 | Unidades: 470 | Importe: $856713.24
+  Sucursal: SUC05 | Producto: P118 | Unidades: 720 | Importe: $1260629.58
+  Sucursal: SUC05 | Producto: P119 | Unidades: 681 | Importe: $1435843.43
+  Sucursal: SUC05 | Producto: P120 | Unidades: 651 | Importe: $1215738.31
+  Sucursal: SUC05 | Producto: P121 | Unidades: 896 | Importe: $1658193.71
+  Sucursal: SUC05 | Producto: P122 | Unidades: 818 | Importe: $1759672.61
+  Sucursal: SUC05 | Producto: P123 | Unidades: 1001 | Importe: $1365196.22
+  Sucursal: SUC05 | Producto: P124 | Unidades: 671 | Importe: $1530716.05
+  Sucursal: SUC05 | Producto: P125 | Unidades: 379 | Importe: $1047176.63
+  Sucursal: SUC05 | Producto: P126 | Unidades: 445 | Importe: $1366512.08
+  Sucursal: SUC05 | Producto: P127 | Unidades: 930 | Importe: $1727942.03
+  Sucursal: SUC05 | Producto: P128 | Unidades: 539 | Importe: $1462642.73
+  Sucursal: SUC05 | Producto: P129 | Unidades: 547 | Importe: $1873821.02
+  Sucursal: SUC05 | Producto: P130 | Unidades: 892 | Importe: $2295032.91
+  Sucursal: SUC05 | Producto: P131 | Unidades: 792 | Importe: $2003758.46
+  Sucursal: SUC05 | Producto: P132 | Unidades: 294 | Importe: $308394.51
+  Sucursal: SUC05 | Producto: P133 | Unidades: 78 | Importe: $146891.51
+  Sucursal: SUC05 | Producto: P134 | Unidades: 94 | Importe: $243299.84
+  Sucursal: SUC05 | Producto: P135 | Unidades: 227 | Importe: $380230.95
+  Sucursal: SUC05 | Producto: P136 | Unidades: 119 | Importe: $266442.17
+  Sucursal: SUC05 | Producto: P137 | Unidades: 296 | Importe: $204718.88
+  Sucursal: SUC05 | Producto: P138 | Unidades: 695 | Importe: $452184.40
+  Sucursal: SUC05 | Producto: P139 | Unidades: 127 | Importe: $307806.99
+
+Sucursal: SUC05 — Total importe: $40775913.21
+  Mayor importe: P130 — $2295032.91
+  Menor importe: P133 — $146891.51
+──────────────────────────────────────────────────
+  Sucursal: SUC06 | Producto: P100 | Unidades: 1665 | Importe: $434402.20
+  Sucursal: SUC06 | Producto: P101 | Unidades: 1243 | Importe: $465665.42
+  Sucursal: SUC06 | Producto: P102 | Unidades: 1628 | Importe: $840720.38
+  Sucursal: SUC06 | Producto: P103 | Unidades: 1440 | Importe: $841204.04
+  Sucursal: SUC06 | Producto: P104 | Unidades: 1847 | Importe: $1426299.77
+  Sucursal: SUC06 | Producto: P105 | Unidades: 1837 | Importe: $1240423.34
+  Sucursal: SUC06 | Producto: P106 | Unidades: 1681 | Importe: $1495357.55
+  Sucursal: SUC06 | Producto: P107 | Unidades: 2220 | Importe: $2153347.73
+  Sucursal: SUC06 | Producto: P108 | Unidades: 697 | Importe: $551338.71
+  Sucursal: SUC06 | Producto: P109 | Unidades: 617 | Importe: $580933.29
+  Sucursal: SUC06 | Producto: P110 | Unidades: 454 | Importe: $463655.53
+  Sucursal: SUC06 | Producto: P111 | Unidades: 821 | Importe: $727844.18
+  Sucursal: SUC06 | Producto: P112 | Unidades: 720 | Importe: $849245.86
+  Sucursal: SUC06 | Producto: P113 | Unidades: 907 | Importe: $891859.16
+  Sucursal: SUC06 | Producto: P114 | Unidades: 691 | Importe: $851584.48
+  Sucursal: SUC06 | Producto: P115 | Unidades: 909 | Importe: $1018515.12
+  Sucursal: SUC06 | Producto: P116 | Unidades: 736 | Importe: $1017201.11
+  Sucursal: SUC06 | Producto: P117 | Unidades: 864 | Importe: $1317812.26
+  Sucursal: SUC06 | Producto: P118 | Unidades: 516 | Importe: $770351.97
+  Sucursal: SUC06 | Producto: P119 | Unidades: 727 | Importe: $1478971.39
+  Sucursal: SUC06 | Producto: P120 | Unidades: 555 | Importe: $1147662.94
+  Sucursal: SUC06 | Producto: P121 | Unidades: 780 | Importe: $1464092.33
+  Sucursal: SUC06 | Producto: P122 | Unidades: 747 | Importe: $873901.71
+  Sucursal: SUC06 | Producto: P123 | Unidades: 838 | Importe: $1484280.59
+  Sucursal: SUC06 | Producto: P124 | Unidades: 328 | Importe: $856675.27
+  Sucursal: SUC06 | Producto: P125 | Unidades: 678 | Importe: $2004103.64
+  Sucursal: SUC06 | Producto: P126 | Unidades: 763 | Importe: $1629967.46
+  Sucursal: SUC06 | Producto: P127 | Unidades: 1306 | Importe: $2379556.66
+  Sucursal: SUC06 | Producto: P128 | Unidades: 638 | Importe: $1453396.58
+  Sucursal: SUC06 | Producto: P129 | Unidades: 576 | Importe: $1845144.34
+  Sucursal: SUC06 | Producto: P130 | Unidades: 789 | Importe: $1640184.00
+  Sucursal: SUC06 | Producto: P131 | Unidades: 506 | Importe: $1188820.89
+  Sucursal: SUC06 | Producto: P132 | Unidades: 353 | Importe: $360996.45
+  Sucursal: SUC06 | Producto: P133 | Unidades: 206 | Importe: $255138.57
+  Sucursal: SUC06 | Producto: P134 | Unidades: 135 | Importe: $293659.78
+  Sucursal: SUC06 | Producto: P135 | Unidades: 193 | Importe: $210390.74
+  Sucursal: SUC06 | Producto: P136 | Unidades: 169 | Importe: $314739.01
+  Sucursal: SUC06 | Producto: P137 | Unidades: 255 | Importe: $357444.66
+  Sucursal: SUC06 | Producto: P138 | Unidades: 557 | Importe: $470612.20
+  Sucursal: SUC06 | Producto: P139 | Unidades: 110 | Importe: $430941.98
+
+Sucursal: SUC06 — Total importe: $40078443.29
+  Mayor importe: P127 — $2379556.66
+  Menor importe: P135 — $210390.74
+──────────────────────────────────────────────────
+  Sucursal: SUC07 | Producto: P100 | Unidades: 2567 | Importe: $680691.07
+  Sucursal: SUC07 | Producto: P101 | Unidades: 3784 | Importe: $1409811.78
+  Sucursal: SUC07 | Producto: P102 | Unidades: 2242 | Importe: $1143917.74
+  Sucursal: SUC07 | Producto: P103 | Unidades: 2245 | Importe: $1351354.93
+  Sucursal: SUC07 | Producto: P104 | Unidades: 1991 | Importe: $1503577.11
+  Sucursal: SUC07 | Producto: P105 | Unidades: 3227 | Importe: $2484293.54
+  Sucursal: SUC07 | Producto: P106 | Unidades: 2822 | Importe: $2705682.06
+  Sucursal: SUC07 | Producto: P107 | Unidades: 3673 | Importe: $3610906.97
+  Sucursal: SUC07 | Producto: P108 | Unidades: 825 | Importe: $848099.93
+  Sucursal: SUC07 | Producto: P109 | Unidades: 449 | Importe: $489908.42
+  Sucursal: SUC07 | Producto: P110 | Unidades: 705 | Importe: $826234.03
+  Sucursal: SUC07 | Producto: P111 | Unidades: 1474 | Importe: $1395270.27
+  Sucursal: SUC07 | Producto: P112 | Unidades: 685 | Importe: $964090.21
+  Sucursal: SUC07 | Producto: P113 | Unidades: 681 | Importe: $672004.25
+  Sucursal: SUC07 | Producto: P114 | Unidades: 1075 | Importe: $1575390.94
+  Sucursal: SUC07 | Producto: P115 | Unidades: 979 | Importe: $1311510.30
+  Sucursal: SUC07 | Producto: P116 | Unidades: 779 | Importe: $1209693.67
+  Sucursal: SUC07 | Producto: P117 | Unidades: 688 | Importe: $936370.76
+  Sucursal: SUC07 | Producto: P118 | Unidades: 1061 | Importe: $1719757.66
+  Sucursal: SUC07 | Producto: P119 | Unidades: 769 | Importe: $1672507.57
+  Sucursal: SUC07 | Producto: P120 | Unidades: 933 | Importe: $2188854.69
+  Sucursal: SUC07 | Producto: P121 | Unidades: 1104 | Importe: $1924513.57
+  Sucursal: SUC07 | Producto: P122 | Unidades: 851 | Importe: $1509596.24
+  Sucursal: SUC07 | Producto: P123 | Unidades: 688 | Importe: $1357056.82
+  Sucursal: SUC07 | Producto: P124 | Unidades: 880 | Importe: $1906932.74
+  Sucursal: SUC07 | Producto: P125 | Unidades: 947 | Importe: $2794742.31
+  Sucursal: SUC07 | Producto: P126 | Unidades: 1064 | Importe: $2601219.15
+  Sucursal: SUC07 | Producto: P127 | Unidades: 1326 | Importe: $2644879.11
+  Sucursal: SUC07 | Producto: P128 | Unidades: 989 | Importe: $2801504.57
+  Sucursal: SUC07 | Producto: P129 | Unidades: 462 | Importe: $1573034.77
+  Sucursal: SUC07 | Producto: P130 | Unidades: 993 | Importe: $2948134.74
+  Sucursal: SUC07 | Producto: P131 | Unidades: 839 | Importe: $1957927.44
+  Sucursal: SUC07 | Producto: P132 | Unidades: 494 | Importe: $516649.25
+  Sucursal: SUC07 | Producto: P133 | Unidades: 212 | Importe: $614546.68
+  Sucursal: SUC07 | Producto: P134 | Unidades: 147 | Importe: $469526.66
+  Sucursal: SUC07 | Producto: P135 | Unidades: 295 | Importe: $343268.04
+  Sucursal: SUC07 | Producto: P136 | Unidades: 205 | Importe: $515123.12
+  Sucursal: SUC07 | Producto: P137 | Unidades: 365 | Importe: $584142.22
+  Sucursal: SUC07 | Producto: P138 | Unidades: 492 | Importe: $625417.58
+  Sucursal: SUC07 | Producto: P139 | Unidades: 213 | Importe: $837050.69
+
+Sucursal: SUC07 — Total importe: $59225193.60
+  Mayor importe: P107 — $3610906.97
+  Menor importe: P135 — $343268.04
+──────────────────────────────────────────────────
+  Sucursal: SUC08 | Producto: P100 | Unidades: 1687 | Importe: $451923.61
+  Sucursal: SUC08 | Producto: P101 | Unidades: 2175 | Importe: $817778.12
+  Sucursal: SUC08 | Producto: P102 | Unidades: 1758 | Importe: $888745.43
+  Sucursal: SUC08 | Producto: P103 | Unidades: 1881 | Importe: $1121722.45
+  Sucursal: SUC08 | Producto: P104 | Unidades: 1757 | Importe: $1336516.85
+  Sucursal: SUC08 | Producto: P105 | Unidades: 2452 | Importe: $1575386.61
+  Sucursal: SUC08 | Producto: P106 | Unidades: 1986 | Importe: $1713411.46
+  Sucursal: SUC08 | Producto: P107 | Unidades: 2013 | Importe: $1927181.71
+  Sucursal: SUC08 | Producto: P108 | Unidades: 757 | Importe: $713286.51
+  Sucursal: SUC08 | Producto: P109 | Unidades: 693 | Importe: $728197.19
+  Sucursal: SUC08 | Producto: P110 | Unidades: 483 | Importe: $546257.49
+  Sucursal: SUC08 | Producto: P111 | Unidades: 628 | Importe: $750542.49
+  Sucursal: SUC08 | Producto: P112 | Unidades: 681 | Importe: $943573.29
+  Sucursal: SUC08 | Producto: P113 | Unidades: 759 | Importe: $947866.91
+  Sucursal: SUC08 | Producto: P114 | Unidades: 915 | Importe: $1141037.12
+  Sucursal: SUC08 | Producto: P115 | Unidades: 693 | Importe: $824938.36
+  Sucursal: SUC08 | Producto: P116 | Unidades: 603 | Importe: $818228.21
+  Sucursal: SUC08 | Producto: P117 | Unidades: 628 | Importe: $824252.58
+  Sucursal: SUC08 | Producto: P118 | Unidades: 696 | Importe: $893812.84
+  Sucursal: SUC08 | Producto: P119 | Unidades: 631 | Importe: $1131231.48
+  Sucursal: SUC08 | Producto: P120 | Unidades: 519 | Importe: $1066647.48
+  Sucursal: SUC08 | Producto: P121 | Unidades: 873 | Importe: $1688813.28
+  Sucursal: SUC08 | Producto: P122 | Unidades: 959 | Importe: $1391081.94
+  Sucursal: SUC08 | Producto: P123 | Unidades: 1025 | Importe: $1049568.41
+  Sucursal: SUC08 | Producto: P124 | Unidades: 568 | Importe: $1099537.84
+  Sucursal: SUC08 | Producto: P125 | Unidades: 646 | Importe: $1907308.80
+  Sucursal: SUC08 | Producto: P126 | Unidades: 685 | Importe: $1560802.49
+  Sucursal: SUC08 | Producto: P127 | Unidades: 957 | Importe: $1832103.69
+  Sucursal: SUC08 | Producto: P128 | Unidades: 498 | Importe: $914961.10
+  Sucursal: SUC08 | Producto: P129 | Unidades: 402 | Importe: $1309860.70
+  Sucursal: SUC08 | Producto: P130 | Unidades: 647 | Importe: $1777121.54
+  Sucursal: SUC08 | Producto: P131 | Unidades: 452 | Importe: $1268672.40
+  Sucursal: SUC08 | Producto: P132 | Unidades: 270 | Importe: $305473.32
+  Sucursal: SUC08 | Producto: P133 | Unidades: 351 | Importe: $234774.12
+  Sucursal: SUC08 | Producto: P134 | Unidades: 41 | Importe: $148557.09
+  Sucursal: SUC08 | Producto: P135 | Unidades: 219 | Importe: $293758.48
+  Sucursal: SUC08 | Producto: P136 | Unidades: 245 | Importe: $317363.82
+  Sucursal: SUC08 | Producto: P137 | Unidades: 154 | Importe: $234485.04
+  Sucursal: SUC08 | Producto: P138 | Unidades: 449 | Importe: $372889.47
+  Sucursal: SUC08 | Producto: P139 | Unidades: 70 | Importe: $227357.34
+
+Sucursal: SUC08 — Total importe: $39097029.06
+  Mayor importe: P107 — $1927181.71
+  Menor importe: P134 — $148557.09
+──────────────────────────────────────────────────
+  Sucursal: SUC09 | Producto: P100 | Unidades: 2767 | Importe: $732326.64
+  Sucursal: SUC09 | Producto: P101 | Unidades: 1960 | Importe: $741230.14
+  Sucursal: SUC09 | Producto: P102 | Unidades: 2342 | Importe: $1201005.93
+  Sucursal: SUC09 | Producto: P103 | Unidades: 3244 | Importe: $1959731.45
+  Sucursal: SUC09 | Producto: P104 | Unidades: 1981 | Importe: $1545426.55
+  Sucursal: SUC09 | Producto: P105 | Unidades: 2233 | Importe: $1601042.28
+  Sucursal: SUC09 | Producto: P106 | Unidades: 2247 | Importe: $2018731.81
+  Sucursal: SUC09 | Producto: P107 | Unidades: 2819 | Importe: $2875451.87
+  Sucursal: SUC09 | Producto: P108 | Unidades: 527 | Importe: $551236.13
+  Sucursal: SUC09 | Producto: P109 | Unidades: 770 | Importe: $727240.99
+  Sucursal: SUC09 | Producto: P110 | Unidades: 413 | Importe: $441211.59
+  Sucursal: SUC09 | Producto: P111 | Unidades: 1049 | Importe: $910172.73
+  Sucursal: SUC09 | Producto: P112 | Unidades: 984 | Importe: $1359647.41
+  Sucursal: SUC09 | Producto: P113 | Unidades: 943 | Importe: $1307330.24
+  Sucursal: SUC09 | Producto: P114 | Unidades: 990 | Importe: $1174506.04
+  Sucursal: SUC09 | Producto: P115 | Unidades: 1263 | Importe: $1618164.75
+  Sucursal: SUC09 | Producto: P116 | Unidades: 530 | Importe: $764409.21
+  Sucursal: SUC09 | Producto: P117 | Unidades: 1076 | Importe: $1825899.45
+  Sucursal: SUC09 | Producto: P118 | Unidades: 866 | Importe: $1464246.22
+  Sucursal: SUC09 | Producto: P119 | Unidades: 1171 | Importe: $2442069.64
+  Sucursal: SUC09 | Producto: P120 | Unidades: 785 | Importe: $1424319.02
+  Sucursal: SUC09 | Producto: P121 | Unidades: 769 | Importe: $1541030.57
+  Sucursal: SUC09 | Producto: P122 | Unidades: 1077 | Importe: $2129759.21
+  Sucursal: SUC09 | Producto: P123 | Unidades: 846 | Importe: $2125583.42
+  Sucursal: SUC09 | Producto: P124 | Unidades: 939 | Importe: $2276520.81
+  Sucursal: SUC09 | Producto: P125 | Unidades: 637 | Importe: $1957867.41
+  Sucursal: SUC09 | Producto: P126 | Unidades: 564 | Importe: $1335260.26
+  Sucursal: SUC09 | Producto: P127 | Unidades: 766 | Importe: $2278410.18
+  Sucursal: SUC09 | Producto: P128 | Unidades: 1016 | Importe: $2683874.78
+  Sucursal: SUC09 | Producto: P129 | Unidades: 533 | Importe: $1773474.19
+  Sucursal: SUC09 | Producto: P130 | Unidades: 816 | Importe: $2404307.36
+  Sucursal: SUC09 | Producto: P131 | Unidades: 388 | Importe: $1353457.78
+  Sucursal: SUC09 | Producto: P132 | Unidades: 199 | Importe: $256226.69
+  Sucursal: SUC09 | Producto: P133 | Unidades: 281 | Importe: $363881.25
+  Sucursal: SUC09 | Producto: P134 | Unidades: 92 | Importe: $209518.75
+  Sucursal: SUC09 | Producto: P135 | Unidades: 201 | Importe: $312203.65
+  Sucursal: SUC09 | Producto: P136 | Unidades: 182 | Importe: $269041.73
+  Sucursal: SUC09 | Producto: P137 | Unidades: 208 | Importe: $444831.31
+  Sucursal: SUC09 | Producto: P138 | Unidades: 907 | Importe: $378039.04
+  Sucursal: SUC09 | Producto: P139 | Unidades: 163 | Importe: $543757.68
+
+Sucursal: SUC09 — Total importe: $53322446.16
+  Mayor importe: P107 — $2875451.87
+  Menor importe: P134 — $209518.75
+──────────────────────────────────────────────────
+  Sucursal: SUC10 | Producto: P100 | Unidades: 2113 | Importe: $560229.08
+  Sucursal: SUC10 | Producto: P101 | Unidades: 2423 | Importe: $912897.01
+  Sucursal: SUC10 | Producto: P102 | Unidades: 3514 | Importe: $1803595.24
+  Sucursal: SUC10 | Producto: P103 | Unidades: 2141 | Importe: $1272451.57
+  Sucursal: SUC10 | Producto: P104 | Unidades: 3194 | Importe: $2453164.82
+  Sucursal: SUC10 | Producto: P105 | Unidades: 4082 | Importe: $2917546.75
+  Sucursal: SUC10 | Producto: P106 | Unidades: 3471 | Importe: $3207575.38
+  Sucursal: SUC10 | Producto: P107 | Unidades: 3604 | Importe: $3603927.82
+  Sucursal: SUC10 | Producto: P108 | Unidades: 466 | Importe: $449054.81
+  Sucursal: SUC10 | Producto: P109 | Unidades: 1138 | Importe: $1270715.69
+  Sucursal: SUC10 | Producto: P110 | Unidades: 1186 | Importe: $1361694.23
+  Sucursal: SUC10 | Producto: P111 | Unidades: 786 | Importe: $883385.19
+  Sucursal: SUC10 | Producto: P112 | Unidades: 892 | Importe: $1185542.36
+  Sucursal: SUC10 | Producto: P113 | Unidades: 1257 | Importe: $1604865.35
+  Sucursal: SUC10 | Producto: P114 | Unidades: 801 | Importe: $1040083.50
+  Sucursal: SUC10 | Producto: P115 | Unidades: 1007 | Importe: $1113877.97
+  Sucursal: SUC10 | Producto: P116 | Unidades: 1005 | Importe: $1841817.71
+  Sucursal: SUC10 | Producto: P117 | Unidades: 690 | Importe: $1167488.82
+  Sucursal: SUC10 | Producto: P118 | Unidades: 738 | Importe: $1292770.95
+  Sucursal: SUC10 | Producto: P119 | Unidades: 761 | Importe: $1457050.62
+  Sucursal: SUC10 | Producto: P120 | Unidades: 919 | Importe: $1997644.57
+  Sucursal: SUC10 | Producto: P121 | Unidades: 764 | Importe: $1828782.20
+  Sucursal: SUC10 | Producto: P122 | Unidades: 878 | Importe: $1808572.51
+  Sucursal: SUC10 | Producto: P123 | Unidades: 893 | Importe: $1344368.76
+  Sucursal: SUC10 | Producto: P124 | Unidades: 865 | Importe: $2203560.53
+  Sucursal: SUC10 | Producto: P125 | Unidades: 461 | Importe: $1272831.29
+  Sucursal: SUC10 | Producto: P126 | Unidades: 808 | Importe: $2134759.36
+  Sucursal: SUC10 | Producto: P127 | Unidades: 1454 | Importe: $2616018.22
+  Sucursal: SUC10 | Producto: P128 | Unidades: 1090 | Importe: $3227636.62
+  Sucursal: SUC10 | Producto: P129 | Unidades: 919 | Importe: $3121898.30
+  Sucursal: SUC10 | Producto: P130 | Unidades: 623 | Importe: $1832100.31
+  Sucursal: SUC10 | Producto: P131 | Unidades: 933 | Importe: $2164670.52
+  Sucursal: SUC10 | Producto: P132 | Unidades: 176 | Importe: $180703.31
+  Sucursal: SUC10 | Producto: P133 | Unidades: 277 | Importe: $644519.53
+  Sucursal: SUC10 | Producto: P134 | Unidades: 105 | Importe: $246721.09
+  Sucursal: SUC10 | Producto: P135 | Unidades: 194 | Importe: $381739.38
+  Sucursal: SUC10 | Producto: P136 | Unidades: 335 | Importe: $579756.86
+  Sucursal: SUC10 | Producto: P137 | Unidades: 172 | Importe: $358252.83
+  Sucursal: SUC10 | Producto: P138 | Unidades: 545 | Importe: $392898.36
+  Sucursal: SUC10 | Producto: P139 | Unidades: 125 | Importe: $371742.00
+
+Sucursal: SUC10 — Total importe: $60108911.42
+  Mayor importe: P107 — $3603927.82
+  Menor importe: P132 — $180703.31
+──────────────────────────────────────────────────
+
+Total de sucursales procesadas : 10
+Importe total general          : $493774264.22
