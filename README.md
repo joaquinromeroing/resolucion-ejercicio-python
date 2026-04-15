@@ -19,10 +19,10 @@ Para construir la imagen y correr el contenedor, primero hay que pararse en la *
 
 ## Pasos para ejecutar
 
-### 1. Pararse en la raíz del repositorio
+### 1. Pararse en la carpeta `proyecto`, dentro del repositorio, ya que allí se encuentra el archivo `Dockerfile`.
 
 ```bash
-cd resolucion-ejercicio-python
+cd resolucion-ejercicio-python/proyecto
 ```
 
 ### 2. Construir la imagen
