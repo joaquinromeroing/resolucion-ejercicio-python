@@ -1,35 +1,42 @@
-# Ejercicio Python
+# Docker - Resolución Ejercicio 9 
 
-**Objetivo:** Entregar el ejercicio como una rama en este repositorio.  
+Este proyecto corresponde a la resolución del ejercicio de Docker, donde se implementa un script en Python que procesa datos utilizando la librería pandas dentro de un contenedor. 
 
-https://github.com/joaquinromeroing/resolucion-ejercicio-python
+El objetivo es calcular el promedio de una serie de valores almacenados en un archivo CSV y guardar el resultado en un archivo de salida, utilizando volúmenes para persistir la información.
 
-## Instrucciones
+## Alumna
+Ines Medina  
+Carrera: Licenciatura en Ciencia de Datos  
 
-1. Crear una rama con la siguiente nomenclatura: carrera-napellido  
-    Ejemplo:  
-            a. tecnicatura-jromero  
-            b. licenciatura-gmazzaglia  
+---
 
-2. Subir la rama al repositorio:  
+## Estructura del Proyecto
+
+- `proyecto/app/analisis.py` → Script principal en Python  
+- `proyecto/data/datos.csv` → Archivo de entrada con los datos  
+- `proyecto/output/` → Carpeta donde se genera el resultado  
+- `proyecto/Dockerfile` → Configuración para construir la imagen  
+
+---
+
+## Requisitos
+
+- Tener Docker instalado y funcionando
+
+---
+
+## Pasos para ejecutar
+
+1. Posicionarse en la carpeta del proyecto:
+
 ```bash
-git add .
-git commit -m "Entrega ejercicio Python"
-git push origin nombre-de-la-rama
+cd proyecto
 ```
-
-
-----------------------
-
-# Ejercicio Docker (Ejercicio 9)
-
-## Instrucciones
-
-1. Crear una rama con la siguiente nomenclatura: docker-napellido  
-
-2. Subir la rama al repositorio:  
+2. Construir la imgen de Docker:
 ```bash
-git add .
-git commit -m "Entrega ejercicio Docker"
-git push origin nombre-de-la-rama
+docker build -t ejercicio-docker-imedina .
 ```
+3. Correr el contenedor con volúmenes
+```bash
+docker run --rm -v "$(pwd)/data:/data" -v "$(pwd)/output:/output" ejercicio-docker-imedina
+``` 
