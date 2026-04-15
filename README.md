@@ -1,35 +1,26 @@
-# Ejercicio Python
+# Resolución Ejercicio 9 - Docker
 
-**Objetivo:** Entregar el ejercicio como una rama en este repositorio.  
+Este proyecto contiene la resolución del Ejercicio 9 de la práctica de Docker, donde se realiza un análisis de datos simple utilizando Python y Pandas dentro de un contenedor, con persistencia de resultados mediante volúmenes.
 
-https://github.com/joaquinromeroing/resolucion-ejercicio-python
+**Alumno:** Marcos Ziadi
+**Carrera:** Licenciatura en Ciencia de Datos
 
-## Instrucciones
+## Estructura del Proyecto
+- `app/`: Contiene el script `analisis.py`.
+- `data/`: Contiene el archivo de entrada `datos.csv`.
+- `output/`: Carpeta donde se generará el resultado del análisis.
+- `Dockerfile`: Archivo de configuración para construir la imagen.
 
-1. Crear una rama con la siguiente nomenclatura: carrera-napellido  
-    Ejemplo:  
-            a. tecnicatura-jromero  
-            b. licenciatura-gmazzaglia  
+## Instrucciones para ejecutar
 
-2. Subir la rama al repositorio:  
-```bash
-git add .
-git commit -m "Entrega ejercicio Python"
-git push origin nombre-de-la-rama
-```
+Para ejecutar este proyecto utilizando Docker, siga estos pasos desde la carpeta `proyecto`:
 
+1. **Buildear la imagen:**
+   ```bash
+   docker build -t ejercicio-docker-ziadi .
+   ```
 
-----------------------
-
-# Ejercicio Docker (Ejercicio 9)
-
-## Instrucciones
-
-1. Crear una rama con la siguiente nomenclatura: docker-napellido  
-
-2. Subir la rama al repositorio:  
-```bash
-git add .
-git commit -m "Entrega ejercicio Docker"
-git push origin nombre-de-la-rama
-```
+2. **Correr el contenedor con volúmenes**   
+   ```bash
+   docker run --rm -v "$(pwd)/data:/data" -v "$(pwd)/output:/output" ejercicio-docker-ziadi
+   ```
