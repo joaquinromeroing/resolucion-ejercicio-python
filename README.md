@@ -12,6 +12,12 @@ Este ejercicio consiste en la contenedorización de un script de Python que util
 
 Para correr este proyecto en Windows (PowerShell), siga estos pasos:
 
+## 🛠️ Instrucciones de Ejecución
+
+Importante: Antes de comenzar, asegúrese de estar situado en la carpeta del proyecto:
+```powershell
+cd proyecto
+```
 ### 1. Construir la Imagen
 ```powershell
 docker build -t ejercicio9-wtejerina .
