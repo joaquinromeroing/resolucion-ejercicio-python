@@ -1,35 +1,19 @@
-# Ejercicio Python
+# Ejercicio 9 - Docker
 
-**Objetivo:** Entregar el ejercicio como una rama en este repositorio.  
+## Pasos para correr el proyecto
 
-https://github.com/joaquinromeroing/resolucion-ejercicio-python
+1. Clonar el repositorio y entrar a la carpeta
+git clone https://github.com/joaquinromeroing/resolucion-ejercicio-python.git
+cd resolucion-ejercicio-python
 
-## Instrucciones
+2. Pararse en la rama
+git checkout docker-nyema
 
-1. Crear una rama con la siguiente nomenclatura: carrera-napellido  
-    Ejemplo:  
-            a. tecnicatura-jromero  
-            b. licenciatura-gmazzaglia  
+3. Buildear la imagen
+docker build -t imagen-analisis .
 
-2. Subir la rama al repositorio:  
-```bash
-git add .
-git commit -m "Entrega ejercicio Python"
-git push origin nombre-de-la-rama
-```
+4. Correr el contenedor
+docker run -v $(pwd)/output:/output imagen-analisis
 
-
-----------------------
-
-# Ejercicio Docker (Ejercicio 9)
-
-## Instrucciones
-
-1. Crear una rama con la siguiente nomenclatura: docker-napellido  
-
-2. Subir la rama al repositorio:  
-```bash
-git add .
-git commit -m "Entrega ejercicio Docker"
-git push origin nombre-de-la-rama
-```
+5. Ver el resultado
+cat output/resultado.txt
