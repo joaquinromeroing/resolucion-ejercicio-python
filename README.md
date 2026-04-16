@@ -33,3 +33,24 @@ git add .
 git commit -m "Entrega ejercicio Docker"
 git push origin nombre-de-la-rama
 ```
+
+## Pasos para buildear y correr el Docker
+
+1. Moverse a la carpeta del docker:
+
+```bash
+cd resolucion-ejercicio-python/proyecto
+```
+
+2. Buildear la imagen
+Desde la terminal, situado en la raíz del proyecto, ejecute:
+
+```bash
+docker build -t ejercicio9-smalatini .
+```
+
+3. Ejecutar el contenedor:
+
+```bash
+docker run ejercicio9-smalatini
+```
