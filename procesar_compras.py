@@ -2,6 +2,52 @@ import csv
 import sys
 
 
+def verificar_ordenado(filas):
+    if len(filas) <= 1:
+        return True
+
+    i = 0
+    while i < len(filas) - 1:
+        if filas[i]["PRSUC"].strip().upper() > filas[i + 1]["PRSUC"].strip().upper():
+            return False
+        i += 1
+
+    return True
+
+
+def ordenamiento_burbuja(filas):
+    n = len(filas)
+    i = 0
+    while i < n:
+        j = 0
+        while j < n - i - 1:
+            if (
+                filas[j]["PRSUC"].strip().upper()
+                > filas[j + 1]["PRSUC"].strip().upper()
+            ):
+                filas[j], filas[j + 1] = filas[j + 1], filas[j]
+            j += 1
+        i += 1
+
+    return filas
+
+
+def guardar_csv_ordenado(nombre_archivo, filas):
+    if len(filas) == 0:
+        return
+
+    columnas = list(filas[0].keys())
+
+    nombre_ordenado = nombre_archivo.rsplit(".", 1)[0] + "_ordenado.csv"
+
+    with open(nombre_ordenado, "w", newline="", encoding="utf-8") as archivo:
+        escritor = csv.DictWriter(archivo, fieldnames=columnas)
+        escritor.writeheader()
+        escritor.writerows(filas)
+
+    print(f"Archivo ordenado guardado como: {nombre_ordenado}")
+
+
 def leer_entero(texto):
     texto_limpio = texto.strip()
     return int(texto_limpio)
@@ -40,7 +86,7 @@ def cargar_compras(nombre_archivo):
 
             datos[sucursal][producto]["unidades"] += cantidad
             datos[sucursal][producto]["importe"] += gasto
-            
+
             i += 1
 
     return datos
@@ -87,14 +133,14 @@ def mostrar_informe(datos):
             if totpes < mnimpor:
                 mnimpor = totpes
                 mnprod = producto
-            
+
             j += 1
 
         print("Resumen de la sucursal")
         print("  TOTSUC:", tot_suc)
         print(f"  Mayor compra: {myprod} (${myimpor:.2f})")
         print(f"  Menor compra: {mnprod} (${mnimpor:.2f})")
-        
+
         i += 1
 
     print()
@@ -105,8 +151,53 @@ def mostrar_informe(datos):
 
 
 def procesar_compras(nombre_archivo):
-    datos = cargar_compras(nombre_archivo)
+    print("=== PROCESADOR DE COMPRAS ===")
+    print()
+
+    with open(nombre_archivo, newline="", encoding="utf-8") as archivo:
+        lector = csv.DictReader(archivo)
+        filas = list(lector)
+
+    respuesta = input("¿El archivo está ordenado? (s/n): ").strip().lower()
+
+    if respuesta == "n":
+        print("Aplicando ordenamiento burbuja...")
+        filas = ordenamiento_burbuja(filas)
+        guardar_csv_ordenado(nombre_archivo, filas)
+        print()
+
+    datos = cargar_compras_desde_filas(filas)
     mostrar_informe(datos)
+
+
+def cargar_compras_desde_filas(filas):
+    datos = {}
+
+    i = 0
+    while i < len(filas):
+        fila = filas[i]
+        sucursal = fila["PRSUC"].strip().upper()
+        producto = fila["PRCOD"].strip().upper()
+        cantidad = leer_entero(fila["PRCANT"])
+        precio = leer_decimal(fila["PRPRE"])
+
+        gasto = cantidad * precio
+
+        if sucursal not in datos:
+            datos[sucursal] = {}
+
+        if producto not in datos[sucursal]:
+            datos[sucursal][producto] = {
+                "unidades": 0,
+                "importe": 0.0,
+            }
+
+        datos[sucursal][producto]["unidades"] += cantidad
+        datos[sucursal][producto]["importe"] += gasto
+
+        i += 1
+
+    return datos
 
 
 if __name__ == "__main__":
