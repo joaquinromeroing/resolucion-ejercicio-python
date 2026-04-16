@@ -1,35 +1,32 @@
-# Ejercicio Python
-
-**Objetivo:** Entregar el ejercicio como una rama en este repositorio.  
-
-https://github.com/joaquinromeroing/resolucion-ejercicio-python
-
-## Instrucciones
-
-1. Crear una rama con la siguiente nomenclatura: carrera-napellido  
-    Ejemplo:  
-            a. tecnicatura-jromero  
-            b. licenciatura-gmazzaglia  
-
-2. Subir la rama al repositorio:  
-```bash
-git add .
-git commit -m "Entrega ejercicio Python"
-git push origin nombre-de-la-rama
-```
-
-
-----------------------
 
 # Ejercicio Docker (Ejercicio 9)
 
-## Instrucciones
+## Rama
+docker-vmarull
 
-1. Crear una rama con la siguiente nomenclatura: docker-napellido  
+## Estructura
 
-2. Subir la rama al repositorio:  
-```bash
-git add .
-git commit -m "Entrega ejercicio Docker"
-git push origin nombre-de-la-rama
-```
+proyecto/
+- app/analisis.py
+- data/datos.csv
+- output/
+- Dockerfile
+
+## Libreria
+Se usa pandas para calcular el promedio.
+
+## Build
+
+docker build -t ejercicio9-docker proyecto
+
+## Run
+
+docker run --rm -v "$(pwd)/proyecto/output:/output" ejercicio9-docker
+
+## Resultado
+
+se genera:
+proyecto/output/resultado.txt
+
+contenido:
+promedio: 12.5
