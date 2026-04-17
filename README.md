@@ -1,35 +1,16 @@
-# Ejercicio Python
+# Ejercicio Docker: build y ejecución
 
-**Objetivo:** Entregar el ejercicio como una rama en este repositorio.  
+## 1) Build de la imagen
 
-https://github.com/joaquinromeroing/resolucion-ejercicio-python
-
-## Instrucciones
-
-1. Crear una rama con la siguiente nomenclatura: carrera-napellido  
-    Ejemplo:  
-            a. tecnicatura-jromero  
-            b. licenciatura-gmazzaglia  
-
-2. Subir la rama al repositorio:  
 ```bash
-git add .
-git commit -m "Entrega ejercicio Python"
-git push origin nombre-de-la-rama
+docker build -t ejercicio-analisis .
 ```
 
+## 2) Ejecutar el contenedor con volúmenes
 
-----------------------
-
-# Ejercicio Docker (Ejercicio 9)
-
-## Instrucciones
-
-1. Crear una rama con la siguiente nomenclatura: docker-napellido  
-
-2. Subir la rama al repositorio:  
 ```bash
-git add .
-git commit -m "Entrega ejercicio Docker"
-git push origin nombre-de-la-rama
+docker run --rm \
+  -v "$(pwd)/data:/data" \
+  -v "$(pwd)/output:/output" \
+  ejercicio-analisis
 ```
