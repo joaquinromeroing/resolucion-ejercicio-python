@@ -1,0 +1,498 @@
+REPORTE DETALLADO DE VENTAS
+============================================================
+
+SUCURSAL: SUC01
+------------------------------------------------------------
+ Producto: P100       | Unidades:  4015 | Ingresos: $1063022.53
+ Producto: P101       | Unidades:  2779 | Ingresos: $1051903.95
+ Producto: P102       | Unidades:  2063 | Ingresos: $1052493.76
+ Producto: P103       | Unidades:  2785 | Ingresos: $1648188.13
+ Producto: P104       | Unidades:  2712 | Ingresos: $2088022.61
+ Producto: P105       | Unidades:  2489 | Ingresos: $1902345.35
+ Producto: P106       | Unidades:  2398 | Ingresos: $2238944.61
+ Producto: P107       | Unidades:  2895 | Ingresos: $2902189.47
+ Producto: P108       | Unidades:   605 | Ingresos: $ 614157.07
+ Producto: P109       | Unidades:   948 | Ingresos: $1003512.65
+ Producto: P110       | Unidades:  1096 | Ingresos: $1313691.98
+ Producto: P111       | Unidades:  1116 | Ingresos: $1281715.32
+ Producto: P112       | Unidades:   881 | Ingresos: $1250955.61
+ Producto: P113       | Unidades:  1190 | Ingresos: $1484639.81
+ Producto: P114       | Unidades:   841 | Ingresos: $1380695.97
+ Producto: P115       | Unidades:  1012 | Ingresos: $1114421.74
+ Producto: P116       | Unidades:   504 | Ingresos: $ 755060.46
+ Producto: P117       | Unidades:  1065 | Ingresos: $2098615.27
+ Producto: P118       | Unidades:   608 | Ingresos: $1066226.21
+ Producto: P119       | Unidades:   809 | Ingresos: $1708845.18
+ Producto: P120       | Unidades:   923 | Ingresos: $1486815.94
+ Producto: P121       | Unidades:   925 | Ingresos: $1660782.84
+ Producto: P122       | Unidades:  1194 | Ingresos: $2051821.60
+ Producto: P123       | Unidades:   880 | Ingresos: $1843952.42
+ Producto: P124       | Unidades:  1143 | Ingresos: $2817349.31
+ Producto: P125       | Unidades:   798 | Ingresos: $2356655.13
+ Producto: P126       | Unidades:   899 | Ingresos: $2474869.14
+ Producto: P127       | Unidades:  1236 | Ingresos: $3162432.18
+ Producto: P128       | Unidades:   784 | Ingresos: $1917402.03
+ Producto: P129       | Unidades:   575 | Ingresos: $1862498.50
+ Producto: P130       | Unidades:   823 | Ingresos: $1654525.41
+ Producto: P131       | Unidades:  1105 | Ingresos: $3213342.73
+ Producto: P132       | Unidades:   350 | Ingresos: $ 494923.38
+ Producto: P133       | Unidades:   238 | Ingresos: $ 465853.40
+ Producto: P134       | Unidades:   142 | Ingresos: $ 320703.71
+ Producto: P135       | Unidades:   344 | Ingresos: $ 495946.99
+ Producto: P136       | Unidades:   183 | Ingresos: $ 397868.41
+ Producto: P137       | Unidades:   377 | Ingresos: $ 468536.30
+ Producto: P138       | Unidades:   554 | Ingresos: $ 669473.82
+ Producto: P139       | Unidades:    95 | Ingresos: $ 382187.83
+
+ RESULTADOS SUCURSAL:
+ >> Total unidades compradas: 46379
+ >> Mayor compra (Producto):  P131 ($3213342.73)
+ >> Menor compra (Producto):  P134 ($320703.71)
+------------------------------------------------------------
+
+SUCURSAL: SUC02
+------------------------------------------------------------
+ Producto: P100       | Unidades:  1964 | Ingresos: $ 513656.53
+ Producto: P101       | Unidades:  1901 | Ingresos: $ 709471.95
+ Producto: P102       | Unidades:  1989 | Ingresos: $1017013.03
+ Producto: P103       | Unidades:  1447 | Ingresos: $ 837812.72
+ Producto: P104       | Unidades:  1904 | Ingresos: $1449893.51
+ Producto: P105       | Unidades:  2010 | Ingresos: $1430943.65
+ Producto: P106       | Unidades:  2371 | Ingresos: $2155968.91
+ Producto: P107       | Unidades:  1661 | Ingresos: $1542695.50
+ Producto: P108       | Unidades:   562 | Ingresos: $ 504920.45
+ Producto: P109       | Unidades:   774 | Ingresos: $ 736391.43
+ Producto: P110       | Unidades:   418 | Ingresos: $ 341879.05
+ Producto: P111       | Unidades:   927 | Ingresos: $ 841700.21
+ Producto: P112       | Unidades:   683 | Ingresos: $ 914491.05
+ Producto: P113       | Unidades:   922 | Ingresos: $ 775054.07
+ Producto: P114       | Unidades:   597 | Ingresos: $ 976054.50
+ Producto: P115       | Unidades:   694 | Ingresos: $ 530293.84
+ Producto: P116       | Unidades:   673 | Ingresos: $1003916.65
+ Producto: P117       | Unidades:   524 | Ingresos: $ 785135.16
+ Producto: P118       | Unidades:   585 | Ingresos: $ 983768.51
+ Producto: P119       | Unidades:   569 | Ingresos: $1148466.98
+ Producto: P120       | Unidades:   795 | Ingresos: $1583897.00
+ Producto: P121       | Unidades:   701 | Ingresos: $1393822.91
+ Producto: P122       | Unidades:  1181 | Ingresos: $1145357.44
+ Producto: P123       | Unidades:   457 | Ingresos: $ 711721.92
+ Producto: P124       | Unidades:   542 | Ingresos: $ 871818.28
+ Producto: P125       | Unidades:   241 | Ingresos: $ 634456.33
+ Producto: P126       | Unidades:   847 | Ingresos: $1975763.08
+ Producto: P127       | Unidades:  1175 | Ingresos: $1797447.72
+ Producto: P128       | Unidades:   731 | Ingresos: $1636480.11
+ Producto: P129       | Unidades:   392 | Ingresos: $1233540.36
+ Producto: P130       | Unidades:   609 | Ingresos: $1709195.29
+ Producto: P131       | Unidades:   357 | Ingresos: $ 849326.46
+ Producto: P132       | Unidades:   248 | Ingresos: $ 285076.69
+ Producto: P133       | Unidades:   282 | Ingresos: $ 298629.96
+ Producto: P134       | Unidades:    91 | Ingresos: $ 133580.53
+ Producto: P135       | Unidades:   474 | Ingresos: $ 392003.84
+ Producto: P136       | Unidades:   225 | Ingresos: $ 331404.37
+ Producto: P137       | Unidades:    57 | Ingresos: $ 101367.04
+ Producto: P138       | Unidades:   361 | Ingresos: $ 447383.08
+ Producto: P139       | Unidades:   170 | Ingresos: $ 468735.24
+
+ RESULTADOS SUCURSAL:
+ >> Total unidades compradas: 33111
+ >> Mayor compra (Producto):  P106 ($2155968.91)
+ >> Menor compra (Producto):  P137 ($101367.04)
+------------------------------------------------------------
+
+SUCURSAL: SUC03
+------------------------------------------------------------
+ Producto: P100       | Unidades:  3092 | Ingresos: $ 822121.36
+ Producto: P101       | Unidades:  2975 | Ingresos: $1130535.32
+ Producto: P102       | Unidades:  3400 | Ingresos: $1734668.42
+ Producto: P103       | Unidades:  3435 | Ingresos: $2059999.69
+ Producto: P104       | Unidades:  2790 | Ingresos: $2156842.25
+ Producto: P105       | Unidades:  2906 | Ingresos: $2191256.19
+ Producto: P106       | Unidades:  3726 | Ingresos: $3427691.44
+ Producto: P107       | Unidades:  3100 | Ingresos: $3180598.70
+ Producto: P108       | Unidades:   681 | Ingresos: $ 619655.81
+ Producto: P109       | Unidades:   456 | Ingresos: $ 441953.09
+ Producto: P110       | Unidades:   653 | Ingresos: $ 658106.76
+ Producto: P111       | Unidades:  1398 | Ingresos: $1265073.50
+ Producto: P112       | Unidades:   750 | Ingresos: $ 967793.62
+ Producto: P113       | Unidades:   722 | Ingresos: $ 768165.41
+ Producto: P114       | Unidades:   554 | Ingresos: $ 611742.69
+ Producto: P115       | Unidades:  1239 | Ingresos: $1831816.01
+ Producto: P116       | Unidades:   806 | Ingresos: $1288622.77
+ Producto: P117       | Unidades:   999 | Ingresos: $1580259.69
+ Producto: P118       | Unidades:  1014 | Ingresos: $1939738.96
+ Producto: P119       | Unidades:   926 | Ingresos: $1954295.75
+ Producto: P120       | Unidades:   894 | Ingresos: $1633258.17
+ Producto: P121       | Unidades:  1278 | Ingresos: $2899336.25
+ Producto: P122       | Unidades:   755 | Ingresos: $1145879.38
+ Producto: P123       | Unidades:   969 | Ingresos: $2330104.66
+ Producto: P124       | Unidades:   813 | Ingresos: $1960735.51
+ Producto: P125       | Unidades:   707 | Ingresos: $2098221.91
+ Producto: P126       | Unidades:   797 | Ingresos: $2046928.43
+ Producto: P127       | Unidades:  1367 | Ingresos: $2002418.51
+ Producto: P128       | Unidades:   595 | Ingresos: $1913688.77
+ Producto: P129       | Unidades:  1032 | Ingresos: $3537428.31
+ Producto: P130       | Unidades:  1148 | Ingresos: $2851141.58
+ Producto: P131       | Unidades:   727 | Ingresos: $2167520.72
+ Producto: P132       | Unidades:   470 | Ingresos: $ 571689.31
+ Producto: P133       | Unidades:   197 | Ingresos: $ 432133.71
+ Producto: P134       | Unidades:    89 | Ingresos: $ 264632.85
+ Producto: P135       | Unidades:   221 | Ingresos: $ 637156.61
+ Producto: P136       | Unidades:   258 | Ingresos: $ 365330.13
+ Producto: P137       | Unidades:   434 | Ingresos: $ 522836.48
+ Producto: P138       | Unidades:   511 | Ingresos: $ 486532.02
+ Producto: P139       | Unidades:   170 | Ingresos: $ 368687.97
+
+ RESULTADOS SUCURSAL:
+ >> Total unidades compradas: 49054
+ >> Mayor compra (Producto):  P129 ($3537428.31)
+ >> Menor compra (Producto):  P134 ($264632.85)
+------------------------------------------------------------
+
+SUCURSAL: SUC04
+------------------------------------------------------------
+ Producto: P100       | Unidades:  2296 | Ingresos: $ 609873.43
+ Producto: P101       | Unidades:  1616 | Ingresos: $ 619922.13
+ Producto: P102       | Unidades:  2442 | Ingresos: $1246688.31
+ Producto: P103       | Unidades:  2707 | Ingresos: $1584230.93
+ Producto: P104       | Unidades:  1556 | Ingresos: $1182533.79
+ Producto: P105       | Unidades:  2411 | Ingresos: $1858791.38
+ Producto: P106       | Unidades:  2790 | Ingresos: $2545515.52
+ Producto: P107       | Unidades:  2518 | Ingresos: $2477812.56
+ Producto: P108       | Unidades:   868 | Ingresos: $ 701191.41
+ Producto: P109       | Unidades:  1107 | Ingresos: $1069105.11
+ Producto: P110       | Unidades:   435 | Ingresos: $ 443446.69
+ Producto: P111       | Unidades:   801 | Ingresos: $ 573586.27
+ Producto: P112       | Unidades:   559 | Ingresos: $ 645024.13
+ Producto: P113       | Unidades:   726 | Ingresos: $ 673370.33
+ Producto: P114       | Unidades:   760 | Ingresos: $ 958762.19
+ Producto: P115       | Unidades:   638 | Ingresos: $ 669985.39
+ Producto: P116       | Unidades:   817 | Ingresos: $1306901.61
+ Producto: P117       | Unidades:   610 | Ingresos: $ 964568.55
+ Producto: P118       | Unidades:   638 | Ingresos: $ 965375.73
+ Producto: P119       | Unidades:   657 | Ingresos: $1133624.85
+ Producto: P120       | Unidades:   548 | Ingresos: $1107561.42
+ Producto: P121       | Unidades:   838 | Ingresos: $1675658.57
+ Producto: P122       | Unidades:   858 | Ingresos: $1094788.96
+ Producto: P123       | Unidades:  1173 | Ingresos: $1617774.75
+ Producto: P124       | Unidades:   808 | Ingresos: $1747462.36
+ Producto: P125       | Unidades:   461 | Ingresos: $1254115.23
+ Producto: P126       | Unidades:   771 | Ingresos: $1944352.63
+ Producto: P127       | Unidades:  1234 | Ingresos: $1446934.13
+ Producto: P128       | Unidades:   641 | Ingresos: $1501692.18
+ Producto: P129       | Unidades:   614 | Ingresos: $1915936.07
+ Producto: P130       | Unidades:   409 | Ingresos: $1254183.38
+ Producto: P131       | Unidades:   876 | Ingresos: $2156473.09
+ Producto: P132       | Unidades:   342 | Ingresos: $ 343080.20
+ Producto: P133       | Unidades:   402 | Ingresos: $ 649277.60
+ Producto: P134       | Unidades:    78 | Ingresos: $ 253937.79
+ Producto: P135       | Unidades:   212 | Ingresos: $ 406318.57
+ Producto: P136       | Unidades:   297 | Ingresos: $ 420732.00
+ Producto: P137       | Unidades:   258 | Ingresos: $ 181337.29
+ Producto: P138       | Unidades:   644 | Ingresos: $ 378570.58
+ Producto: P139       | Unidades:   110 | Ingresos: $ 301107.56
+
+ RESULTADOS SUCURSAL:
+ >> Total unidades compradas: 38526
+ >> Mayor compra (Producto):  P106 ($2545515.52)
+ >> Menor compra (Producto):  P137 ($181337.29)
+------------------------------------------------------------
+
+SUCURSAL: SUC05
+------------------------------------------------------------
+ Producto: P100       | Unidades:  2083 | Ingresos: $ 546214.79
+ Producto: P101       | Unidades:  2101 | Ingresos: $ 785716.92
+ Producto: P102       | Unidades:  1865 | Ingresos: $ 941796.53
+ Producto: P103       | Unidades:  1842 | Ingresos: $1091460.25
+ Producto: P104       | Unidades:  1762 | Ingresos: $1327170.54
+ Producto: P105       | Unidades:  3066 | Ingresos: $2001715.15
+ Producto: P106       | Unidades:  1814 | Ingresos: $1665641.66
+ Producto: P107       | Unidades:  1433 | Ingresos: $1406907.86
+ Producto: P108       | Unidades:   727 | Ingresos: $ 619259.18
+ Producto: P109       | Unidades:   560 | Ingresos: $ 511729.48
+ Producto: P110       | Unidades:   495 | Ingresos: $ 538267.42
+ Producto: P111       | Unidades:  1016 | Ingresos: $ 655844.80
+ Producto: P112       | Unidades:   594 | Ingresos: $ 749224.31
+ Producto: P113       | Unidades:   802 | Ingresos: $ 662118.80
+ Producto: P114       | Unidades:   736 | Ingresos: $1028239.44
+ Producto: P115       | Unidades:   443 | Ingresos: $ 625746.73
+ Producto: P116       | Unidades:   424 | Ingresos: $ 449301.09
+ Producto: P117       | Unidades:   470 | Ingresos: $ 856713.24
+ Producto: P118       | Unidades:   720 | Ingresos: $1260629.58
+ Producto: P119       | Unidades:   681 | Ingresos: $1435843.43
+ Producto: P120       | Unidades:   651 | Ingresos: $1215738.31
+ Producto: P121       | Unidades:   896 | Ingresos: $1658193.71
+ Producto: P122       | Unidades:   818 | Ingresos: $1759672.61
+ Producto: P123       | Unidades:  1001 | Ingresos: $1365196.22
+ Producto: P124       | Unidades:   671 | Ingresos: $1530716.05
+ Producto: P125       | Unidades:   379 | Ingresos: $1047176.63
+ Producto: P126       | Unidades:   445 | Ingresos: $1366512.08
+ Producto: P127       | Unidades:   930 | Ingresos: $1727942.03
+ Producto: P128       | Unidades:   539 | Ingresos: $1462642.73
+ Producto: P129       | Unidades:   547 | Ingresos: $1873821.02
+ Producto: P130       | Unidades:   892 | Ingresos: $2295032.91
+ Producto: P131       | Unidades:   792 | Ingresos: $2003758.46
+ Producto: P132       | Unidades:   294 | Ingresos: $ 308394.51
+ Producto: P133       | Unidades:    78 | Ingresos: $ 146891.51
+ Producto: P134       | Unidades:    94 | Ingresos: $ 243299.84
+ Producto: P135       | Unidades:   227 | Ingresos: $ 380230.95
+ Producto: P136       | Unidades:   119 | Ingresos: $ 266442.17
+ Producto: P137       | Unidades:   296 | Ingresos: $ 204718.88
+ Producto: P138       | Unidades:   695 | Ingresos: $ 452184.40
+ Producto: P139       | Unidades:   127 | Ingresos: $ 307806.99
+
+ RESULTADOS SUCURSAL:
+ >> Total unidades compradas: 34125
+ >> Mayor compra (Producto):  P130 ($2295032.91)
+ >> Menor compra (Producto):  P133 ($146891.51)
+------------------------------------------------------------
+
+SUCURSAL: SUC06
+------------------------------------------------------------
+ Producto: P100       | Unidades:  1665 | Ingresos: $ 434402.20
+ Producto: P101       | Unidades:  1243 | Ingresos: $ 465665.42
+ Producto: P102       | Unidades:  1628 | Ingresos: $ 840720.38
+ Producto: P103       | Unidades:  1440 | Ingresos: $ 841204.04
+ Producto: P104       | Unidades:  1847 | Ingresos: $1426299.77
+ Producto: P105       | Unidades:  1837 | Ingresos: $1240423.34
+ Producto: P106       | Unidades:  1681 | Ingresos: $1495357.55
+ Producto: P107       | Unidades:  2220 | Ingresos: $2153347.73
+ Producto: P108       | Unidades:   697 | Ingresos: $ 551338.71
+ Producto: P109       | Unidades:   617 | Ingresos: $ 580933.29
+ Producto: P110       | Unidades:   454 | Ingresos: $ 463655.53
+ Producto: P111       | Unidades:   821 | Ingresos: $ 727844.18
+ Producto: P112       | Unidades:   720 | Ingresos: $ 849245.86
+ Producto: P113       | Unidades:   907 | Ingresos: $ 891859.16
+ Producto: P114       | Unidades:   691 | Ingresos: $ 851584.48
+ Producto: P115       | Unidades:   909 | Ingresos: $1018515.12
+ Producto: P116       | Unidades:   736 | Ingresos: $1017201.11
+ Producto: P117       | Unidades:   864 | Ingresos: $1317812.26
+ Producto: P118       | Unidades:   516 | Ingresos: $ 770351.97
+ Producto: P119       | Unidades:   727 | Ingresos: $1478971.39
+ Producto: P120       | Unidades:   555 | Ingresos: $1147662.94
+ Producto: P121       | Unidades:   780 | Ingresos: $1464092.33
+ Producto: P122       | Unidades:   747 | Ingresos: $ 873901.71
+ Producto: P123       | Unidades:   838 | Ingresos: $1484280.59
+ Producto: P124       | Unidades:   328 | Ingresos: $ 856675.27
+ Producto: P125       | Unidades:   678 | Ingresos: $2004103.64
+ Producto: P126       | Unidades:   763 | Ingresos: $1629967.46
+ Producto: P127       | Unidades:  1306 | Ingresos: $2379556.66
+ Producto: P128       | Unidades:   638 | Ingresos: $1453396.58
+ Producto: P129       | Unidades:   576 | Ingresos: $1845144.34
+ Producto: P130       | Unidades:   789 | Ingresos: $1640184.00
+ Producto: P131       | Unidades:   506 | Ingresos: $1188820.89
+ Producto: P132       | Unidades:   353 | Ingresos: $ 360996.45
+ Producto: P133       | Unidades:   206 | Ingresos: $ 255138.57
+ Producto: P134       | Unidades:   135 | Ingresos: $ 293659.78
+ Producto: P135       | Unidades:   193 | Ingresos: $ 210390.74
+ Producto: P136       | Unidades:   169 | Ingresos: $ 314739.01
+ Producto: P137       | Unidades:   255 | Ingresos: $ 357444.66
+ Producto: P138       | Unidades:   557 | Ingresos: $ 470612.20
+ Producto: P139       | Unidades:   110 | Ingresos: $ 430941.98
+
+ RESULTADOS SUCURSAL:
+ >> Total unidades compradas: 32702
+ >> Mayor compra (Producto):  P127 ($2379556.66)
+ >> Menor compra (Producto):  P135 ($210390.74)
+------------------------------------------------------------
+
+SUCURSAL: SUC07
+------------------------------------------------------------
+ Producto: P100       | Unidades:  2567 | Ingresos: $ 680691.07
+ Producto: P101       | Unidades:  3784 | Ingresos: $1409811.78
+ Producto: P102       | Unidades:  2242 | Ingresos: $1143917.74
+ Producto: P103       | Unidades:  2245 | Ingresos: $1351354.93
+ Producto: P104       | Unidades:  1991 | Ingresos: $1503577.11
+ Producto: P105       | Unidades:  3227 | Ingresos: $2484293.54
+ Producto: P106       | Unidades:  2822 | Ingresos: $2705682.06
+ Producto: P107       | Unidades:  3673 | Ingresos: $3610906.97
+ Producto: P108       | Unidades:   825 | Ingresos: $ 848099.93
+ Producto: P109       | Unidades:   449 | Ingresos: $ 489908.42
+ Producto: P110       | Unidades:   705 | Ingresos: $ 826234.03
+ Producto: P111       | Unidades:  1474 | Ingresos: $1395270.27
+ Producto: P112       | Unidades:   685 | Ingresos: $ 964090.21
+ Producto: P113       | Unidades:   681 | Ingresos: $ 672004.25
+ Producto: P114       | Unidades:  1075 | Ingresos: $1575390.94
+ Producto: P115       | Unidades:   979 | Ingresos: $1311510.30
+ Producto: P116       | Unidades:   779 | Ingresos: $1209693.67
+ Producto: P117       | Unidades:   688 | Ingresos: $ 936370.76
+ Producto: P118       | Unidades:  1061 | Ingresos: $1719757.66
+ Producto: P119       | Unidades:   769 | Ingresos: $1672507.57
+ Producto: P120       | Unidades:   933 | Ingresos: $2188854.69
+ Producto: P121       | Unidades:  1104 | Ingresos: $1924513.57
+ Producto: P122       | Unidades:   851 | Ingresos: $1509596.24
+ Producto: P123       | Unidades:   688 | Ingresos: $1357056.82
+ Producto: P124       | Unidades:   880 | Ingresos: $1906932.74
+ Producto: P125       | Unidades:   947 | Ingresos: $2794742.31
+ Producto: P126       | Unidades:  1064 | Ingresos: $2601219.15
+ Producto: P127       | Unidades:  1326 | Ingresos: $2644879.11
+ Producto: P128       | Unidades:   989 | Ingresos: $2801504.57
+ Producto: P129       | Unidades:   462 | Ingresos: $1573034.77
+ Producto: P130       | Unidades:   993 | Ingresos: $2948134.74
+ Producto: P131       | Unidades:   839 | Ingresos: $1957927.44
+ Producto: P132       | Unidades:   494 | Ingresos: $ 516649.25
+ Producto: P133       | Unidades:   212 | Ingresos: $ 614546.68
+ Producto: P134       | Unidades:   147 | Ingresos: $ 469526.66
+ Producto: P135       | Unidades:   295 | Ingresos: $ 343268.04
+ Producto: P136       | Unidades:   205 | Ingresos: $ 515123.12
+ Producto: P137       | Unidades:   365 | Ingresos: $ 584142.22
+ Producto: P138       | Unidades:   492 | Ingresos: $ 625417.58
+ Producto: P139       | Unidades:   213 | Ingresos: $ 837050.69
+
+ RESULTADOS SUCURSAL:
+ >> Total unidades compradas: 46220
+ >> Mayor compra (Producto):  P107 ($3610906.97)
+ >> Menor compra (Producto):  P135 ($343268.04)
+------------------------------------------------------------
+
+SUCURSAL: SUC08
+------------------------------------------------------------
+ Producto: P100       | Unidades:  1687 | Ingresos: $ 451923.61
+ Producto: P101       | Unidades:  2175 | Ingresos: $ 817778.12
+ Producto: P102       | Unidades:  1758 | Ingresos: $ 888745.43
+ Producto: P103       | Unidades:  1881 | Ingresos: $1121722.45
+ Producto: P104       | Unidades:  1757 | Ingresos: $1336516.85
+ Producto: P105       | Unidades:  2452 | Ingresos: $1575386.61
+ Producto: P106       | Unidades:  1986 | Ingresos: $1713411.46
+ Producto: P107       | Unidades:  2013 | Ingresos: $1927181.71
+ Producto: P108       | Unidades:   757 | Ingresos: $ 713286.51
+ Producto: P109       | Unidades:   693 | Ingresos: $ 728197.19
+ Producto: P110       | Unidades:   483 | Ingresos: $ 546257.49
+ Producto: P111       | Unidades:   628 | Ingresos: $ 750542.49
+ Producto: P112       | Unidades:   681 | Ingresos: $ 943573.29
+ Producto: P113       | Unidades:   759 | Ingresos: $ 947866.91
+ Producto: P114       | Unidades:   915 | Ingresos: $1141037.12
+ Producto: P115       | Unidades:   693 | Ingresos: $ 824938.36
+ Producto: P116       | Unidades:   603 | Ingresos: $ 818228.21
+ Producto: P117       | Unidades:   628 | Ingresos: $ 824252.58
+ Producto: P118       | Unidades:   696 | Ingresos: $ 893812.84
+ Producto: P119       | Unidades:   631 | Ingresos: $1131231.48
+ Producto: P120       | Unidades:   519 | Ingresos: $1066647.48
+ Producto: P121       | Unidades:   873 | Ingresos: $1688813.28
+ Producto: P122       | Unidades:   959 | Ingresos: $1391081.94
+ Producto: P123       | Unidades:  1025 | Ingresos: $1049568.41
+ Producto: P124       | Unidades:   568 | Ingresos: $1099537.84
+ Producto: P125       | Unidades:   646 | Ingresos: $1907308.80
+ Producto: P126       | Unidades:   685 | Ingresos: $1560802.49
+ Producto: P127       | Unidades:   957 | Ingresos: $1832103.69
+ Producto: P128       | Unidades:   498 | Ingresos: $ 914961.10
+ Producto: P129       | Unidades:   402 | Ingresos: $1309860.70
+ Producto: P130       | Unidades:   647 | Ingresos: $1777121.54
+ Producto: P131       | Unidades:   452 | Ingresos: $1268672.40
+ Producto: P132       | Unidades:   270 | Ingresos: $ 305473.32
+ Producto: P133       | Unidades:   351 | Ingresos: $ 234774.12
+ Producto: P134       | Unidades:    41 | Ingresos: $ 148557.09
+ Producto: P135       | Unidades:   219 | Ingresos: $ 293758.48
+ Producto: P136       | Unidades:   245 | Ingresos: $ 317363.82
+ Producto: P137       | Unidades:   154 | Ingresos: $ 234485.04
+ Producto: P138       | Unidades:   449 | Ingresos: $ 372889.47
+ Producto: P139       | Unidades:    70 | Ingresos: $ 227357.34
+
+ RESULTADOS SUCURSAL:
+ >> Total unidades compradas: 33906
+ >> Mayor compra (Producto):  P107 ($1927181.71)
+ >> Menor compra (Producto):  P134 ($148557.09)
+------------------------------------------------------------
+
+SUCURSAL: SUC09
+------------------------------------------------------------
+ Producto: P100       | Unidades:  2767 | Ingresos: $ 732326.64
+ Producto: P101       | Unidades:  1960 | Ingresos: $ 741230.14
+ Producto: P102       | Unidades:  2342 | Ingresos: $1201005.93
+ Producto: P103       | Unidades:  3244 | Ingresos: $1959731.45
+ Producto: P104       | Unidades:  1981 | Ingresos: $1545426.55
+ Producto: P105       | Unidades:  2233 | Ingresos: $1601042.28
+ Producto: P106       | Unidades:  2247 | Ingresos: $2018731.81
+ Producto: P107       | Unidades:  2819 | Ingresos: $2875451.87
+ Producto: P108       | Unidades:   527 | Ingresos: $ 551236.13
+ Producto: P109       | Unidades:   770 | Ingresos: $ 727240.99
+ Producto: P110       | Unidades:   413 | Ingresos: $ 441211.59
+ Producto: P111       | Unidades:  1049 | Ingresos: $ 910172.73
+ Producto: P112       | Unidades:   984 | Ingresos: $1359647.41
+ Producto: P113       | Unidades:   943 | Ingresos: $1307330.24
+ Producto: P114       | Unidades:   990 | Ingresos: $1174506.04
+ Producto: P115       | Unidades:  1263 | Ingresos: $1618164.75
+ Producto: P116       | Unidades:   530 | Ingresos: $ 764409.21
+ Producto: P117       | Unidades:  1076 | Ingresos: $1825899.45
+ Producto: P118       | Unidades:   866 | Ingresos: $1464246.22
+ Producto: P119       | Unidades:  1171 | Ingresos: $2442069.64
+ Producto: P120       | Unidades:   785 | Ingresos: $1424319.02
+ Producto: P121       | Unidades:   769 | Ingresos: $1541030.57
+ Producto: P122       | Unidades:  1077 | Ingresos: $2129759.21
+ Producto: P123       | Unidades:   846 | Ingresos: $2125583.42
+ Producto: P124       | Unidades:   939 | Ingresos: $2276520.81
+ Producto: P125       | Unidades:   637 | Ingresos: $1957867.41
+ Producto: P126       | Unidades:   564 | Ingresos: $1335260.26
+ Producto: P127       | Unidades:   766 | Ingresos: $2278410.18
+ Producto: P128       | Unidades:  1016 | Ingresos: $2683874.78
+ Producto: P129       | Unidades:   533 | Ingresos: $1773474.19
+ Producto: P130       | Unidades:   816 | Ingresos: $2404307.36
+ Producto: P131       | Unidades:   388 | Ingresos: $1353457.78
+ Producto: P132       | Unidades:   199 | Ingresos: $ 256226.69
+ Producto: P133       | Unidades:   281 | Ingresos: $ 363881.25
+ Producto: P134       | Unidades:    92 | Ingresos: $ 209518.75
+ Producto: P135       | Unidades:   201 | Ingresos: $ 312203.65
+ Producto: P136       | Unidades:   182 | Ingresos: $ 269041.73
+ Producto: P137       | Unidades:   208 | Ingresos: $ 444831.31
+ Producto: P138       | Unidades:   907 | Ingresos: $ 378039.04
+ Producto: P139       | Unidades:   163 | Ingresos: $ 543757.68
+
+ RESULTADOS SUCURSAL:
+ >> Total unidades compradas: 41544
+ >> Mayor compra (Producto):  P107 ($2875451.87)
+ >> Menor compra (Producto):  P134 ($209518.75)
+------------------------------------------------------------
+
+SUCURSAL: SUC10
+------------------------------------------------------------
+ Producto: P100       | Unidades:  2113 | Ingresos: $ 560229.08
+ Producto: P101       | Unidades:  2423 | Ingresos: $ 912897.01
+ Producto: P102       | Unidades:  3514 | Ingresos: $1803595.24
+ Producto: P103       | Unidades:  2141 | Ingresos: $1272451.57
+ Producto: P104       | Unidades:  3194 | Ingresos: $2453164.82
+ Producto: P105       | Unidades:  4082 | Ingresos: $2917546.75
+ Producto: P106       | Unidades:  3471 | Ingresos: $3207575.38
+ Producto: P107       | Unidades:  3604 | Ingresos: $3603927.82
+ Producto: P108       | Unidades:   466 | Ingresos: $ 449054.81
+ Producto: P109       | Unidades:  1138 | Ingresos: $1270715.69
+ Producto: P110       | Unidades:  1186 | Ingresos: $1361694.23
+ Producto: P111       | Unidades:   786 | Ingresos: $ 883385.19
+ Producto: P112       | Unidades:   892 | Ingresos: $1185542.36
+ Producto: P113       | Unidades:  1257 | Ingresos: $1604865.35
+ Producto: P114       | Unidades:   801 | Ingresos: $1040083.50
+ Producto: P115       | Unidades:  1007 | Ingresos: $1113877.97
+ Producto: P116       | Unidades:  1005 | Ingresos: $1841817.71
+ Producto: P117       | Unidades:   690 | Ingresos: $1167488.82
+ Producto: P118       | Unidades:   738 | Ingresos: $1292770.95
+ Producto: P119       | Unidades:   761 | Ingresos: $1457050.62
+ Producto: P120       | Unidades:   919 | Ingresos: $1997644.57
+ Producto: P121       | Unidades:   764 | Ingresos: $1828782.20
+ Producto: P122       | Unidades:   878 | Ingresos: $1808572.51
+ Producto: P123       | Unidades:   893 | Ingresos: $1344368.76
+ Producto: P124       | Unidades:   865 | Ingresos: $2203560.53
+ Producto: P125       | Unidades:   461 | Ingresos: $1272831.29
+ Producto: P126       | Unidades:   808 | Ingresos: $2134759.36
+ Producto: P127       | Unidades:  1454 | Ingresos: $2616018.22
+ Producto: P128       | Unidades:  1090 | Ingresos: $3227636.62
+ Producto: P129       | Unidades:   919 | Ingresos: $3121898.30
+ Producto: P130       | Unidades:   623 | Ingresos: $1832100.31
+ Producto: P131       | Unidades:   933 | Ingresos: $2164670.52
+ Producto: P132       | Unidades:   176 | Ingresos: $ 180703.31
+ Producto: P133       | Unidades:   277 | Ingresos: $ 644519.53
+ Producto: P134       | Unidades:   105 | Ingresos: $ 246721.09
+ Producto: P135       | Unidades:   194 | Ingresos: $ 381739.38
+ Producto: P136       | Unidades:   335 | Ingresos: $ 579756.86
+ Producto: P137       | Unidades:   172 | Ingresos: $ 358252.83
+ Producto: P138       | Unidades:   545 | Ingresos: $ 392898.36
+ Producto: P139       | Unidades:   125 | Ingresos: $ 371742.00
+
+ RESULTADOS SUCURSAL:
+ >> Total unidades compradas: 47805
+ >> Mayor compra (Producto):  P107 ($3603927.82)
+ >> Menor compra (Producto):  P132 ($180703.31)
+------------------------------------------------------------
+
+============================================================
+ESTADÍSTICA TOTAL GENERAL
+Total de sucursales: 10
+Compra total en pesos: $493774264.22
+============================================================
