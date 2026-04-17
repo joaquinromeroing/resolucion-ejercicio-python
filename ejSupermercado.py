@@ -65,4 +65,7 @@ while i < n:
 
 print (f"El supermercado tiene un total de {franchiseAmount} sucursales")
 print (f"La compra total en pesos de todas las sucursales es de: ${totalPriceAllFranchises}")
-input("Presione para salir")
+
+with open("/output/salida.txt", "w") as f:
+    f.write(f"El supermercado tiene un total de {franchiseAmount} sucursales\n")
+    f.write(f"La compra total en pesos de todas las sucursales es de: ${totalPriceAllFranchises}\n")

@@ -1,0 +1,2 @@
+El supermercado tiene un total de 10 sucursales
+La compra total en pesos de todas las sucursales es de: $206349728.29000035

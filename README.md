@@ -1,19 +1,9 @@
-# Ejercicio Python
+Ejercicio 9 Pasos a Seguir
 
-**Objetivo:** Entregar el ejercicio como una rama en este repositorio.  
+Buildear la imagen: usar docker build -f DockerfileEj -t ejercicio-supermercado
 
-https://github.com/joaquinromeroing/resolucion-ejercicio-python
+Crear la carpeta del output: mkdir -p output
 
-## Instrucciones
+Correr el contenedor con volumen asociado: docker run -v "$(pwd)/output":/output ejercicio-supermercado
 
-1. Crear una rama con la siguiente nomenclatura: carrera-napellido  
-    Ejemplo:  
-            a. tecnicatura-jromero  
-            b. licenciatura-gmazzaglia  
-
-2. Subir la rama al repositorio:  
-```bash
-git add .
-git commit -m "Entrega ejercicio Python"
-git push origin nombre-de-la-rama
-```
+Y para verificar que se creo el archivo usar: cat output/salida.txt

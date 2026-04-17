@@ -1,0 +1,6 @@
+FROM python:3.11
+RUN pip install pandas
+WORKDIR /app
+COPY ejSupermercado.py .
+COPY "COMPRAS_supermercado(in).csv" .
+CMD ["python", "ejSupermercado.py"]
