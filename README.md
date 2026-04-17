@@ -33,3 +33,16 @@ git add .
 git commit -m "Entrega ejercicio Docker"
 git push origin nombre-de-la-rama
 ```
+## Resolución Ejercicio 9 - Docker
+
+### Estructura utilizada
+
+- `data/datos.csv`
+- `app/analisis.py`
+- `output/`
+- `Dockerfile`
+
+### Build de la imagen
+
+```bash
+sudo docker build -t ejercicio9 .
