@@ -1,5 +1,6 @@
 import csv
 
+
 def ordenar_burbuja(lista):
     n = len(lista)
     for i in range(n):
@@ -8,20 +9,12 @@ def ordenar_burbuja(lista):
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
     return lista
 
-def leer_registro(archivo):
-    try:
-        reg = next(archivo)
-        reg["PRCANT"] = int(reg["PRCANT"])
-        reg["PRPRE"] = float(reg["PRPRE"])
-        return reg
-    except StopIteration:
-        return None
 
-path = input("Ingrese el path del CSV: ")
-ordenado = input("El archivo está ordenado? (Y/N): ")
+def calcular_importe(cantidad, precio):
+    return cantidad * precio
 
-if ordenado.upper() == "N":
 
+def leer_csv_a_lista(path):
     lista = []
 
     with open(path, newline="", encoding="utf-8") as f:
@@ -32,76 +25,102 @@ if ordenado.upper() == "N":
             fila["PRPRE"] = float(fila["PRPRE"])
             lista.append(fila)
 
-    lista = ordenar_burbuja(lista)
+    return lista
 
-    temp_path = "temp_ordenado.csv"
 
-    with open(temp_path, "w", newline="", encoding="utf-8") as f:
-        campos = ["PRSUC", "PRCOD", "PRFEC", "PRPROV", "PRCANT", "PRPRE"]
-        writer = csv.DictWriter(f, fieldnames=campos)
+def leer_registro(archivo):
+    try:
+        reg = next(archivo)
+        reg["PRCANT"] = int(reg["PRCANT"])
+        reg["PRPRE"] = float(reg["PRPRE"])
+        return reg
+    except StopIteration:
+        return None
 
-        writer.writeheader()
-        for fila in lista:
-            writer.writerow(fila)
 
-    archivo_final = open(temp_path, newline="", encoding="utf-8")
+def main():
+    path = input("Ingrese el path del CSV: ")
+    ordenado = input("El archivo está ordenado? (Y/N): ")
 
-else:
-    archivo_final = open(path, newline="", encoding="utf-8")
+    if ordenado.upper() == "N":
+        lista = leer_csv_a_lista(path)
+        lista = ordenar_burbuja(lista)
 
-archivo = csv.DictReader(archivo_final)
+        temp_path = "temp_ordenado.csv"
 
-reg = leer_registro(archivo)
+        with open(temp_path, "w", newline="", encoding="utf-8") as f:
+            campos = ["PRSUC", "PRCOD", "PRFEC", "PRPROV", "PRCANT", "PRPRE"]
+            writer = csv.DictWriter(f, fieldnames=campos)
 
-cantsucursales = 0
-totalimporte = 0
+            writer.writeheader()
 
-while reg is not None:
-    sucursal_actual = reg["PRSUC"]
-    totsucursales = 0
-    mayor_inicializado = False
+            for fila in lista:
+                writer.writerow(fila)
 
-    print(f"\nSUCURSAL: {sucursal_actual}")
+        archivo_final = open(temp_path, newline="", encoding="utf-8")
 
-    while reg is not None and reg["PRSUC"] == sucursal_actual:
-        producto_actual = reg["PRCOD"]
-        totunidades = 0
-        totpesos = 0
+    else:
+        archivo_final = open(path, newline="", encoding="utf-8")
 
-        while reg is not None and reg["PRSUC"] == sucursal_actual and reg["PRCOD"] == producto_actual:
-            importe = reg["PRCANT"] * reg["PRPRE"]
+    archivo = csv.DictReader(archivo_final)
 
-            totunidades += reg["PRCANT"]
-            totpesos += importe
+    reg = leer_registro(archivo)
 
-            reg = leer_registro(archivo)
+    cantsucursales = 0
+    totalimporte = 0
 
-        print(f"  PRODUCTO: {producto_actual} | TOTUNI: {totunidades} | TOTPES: ${totpesos:.2f}")
+    while reg is not None:
+        sucursal_actual = reg["PRSUC"]
+        totsucursales = 0
+        mayor_inicializado = False
 
-        totsucursales += totunidades
-        totalimporte += totpesos
+        print(f"\nSUCURSAL: {sucursal_actual}")
 
-        if not mayor_inicializado:
-            mayor_prod = producto_actual
-            mayor_importe = totpesos
-            menor_prod = producto_actual
-            menor_importe = totpesos
-            mayor_inicializado = True
-        else:
-            if totpesos > mayor_importe:
+        while reg is not None and reg["PRSUC"] == sucursal_actual:
+            producto_actual = reg["PRCOD"]
+            totunidades = 0
+            totpesos = 0
+
+            while reg is not None and reg["PRSUC"] == sucursal_actual and reg["PRCOD"] == producto_actual:
+                importe = calcular_importe(reg["PRCANT"], reg["PRPRE"])
+
+                totunidades += reg["PRCANT"]
+                totpesos += importe
+
+                reg = leer_registro(archivo)
+
+            print(f"  PRODUCTO: {producto_actual} | TOTUNI: {totunidades} | TOTPES: ${totpesos:.2f}")
+
+            totsucursales += totunidades
+            totalimporte += totpesos
+
+            if mayor_inicializado == False:
                 mayor_prod = producto_actual
                 mayor_importe = totpesos
-
-            if totpesos < menor_importe:
                 menor_prod = producto_actual
                 menor_importe = totpesos
+                mayor_inicializado = True
+            else:
+                if totpesos > mayor_importe:
+                    mayor_prod = producto_actual
+                    mayor_importe = totpesos
 
-    print(f"TOTAL UNIDADES SUCURSAL: {totsucursales}")
-    print(f"MAYOR COMPRA: {mayor_prod} -> ${mayor_importe:.2f}")
-    print(f"MENOR COMPRA: {menor_prod} -> ${menor_importe:.2f}")
+                if totpesos < menor_importe:
+                    menor_prod = producto_actual
+                    menor_importe = totpesos
 
-    cantsucursales += 1
+        print(f"TOTAL UNIDADES SUCURSAL: {totsucursales}")
+        print(f"MAYOR COMPRA: {mayor_prod} -> ${mayor_importe:.2f}")
+        print(f"MENOR COMPRA: {menor_prod} -> ${menor_importe:.2f}")
 
-print("\n--- TOTALES GENERALES ---")
-print(f"CANTIDAD DE SUCURSALES: {cantsucursales}")
-print(f"TOTAL EN PESOS: ${totalimporte:.2f}")
+        cantsucursales += 1
+
+    print("\n--- TOTALES GENERALES ---")
+    print(f"CANTIDAD DE SUCURSALES: {cantsucursales}")
+    print(f"TOTAL EN PESOS: ${totalimporte:.2f}")
+
+    archivo_final.close()
+
+
+if __name__ == "__main__":
+    main()
