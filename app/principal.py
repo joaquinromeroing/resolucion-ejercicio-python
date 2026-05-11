@@ -1,11 +1,17 @@
 import os
 import csv
 
+def calcular_importe(cantidad, precio):
+    return int(cantidad) * float(precio)
+
+def debe_intercambiar(r1, r2):
+    return r1['PRSUC'] > r2['PRSUC']
+
 def algoritmo_burbuja(registros):
     n = len(registros)
     for i in range(n):
         for j in range(0, n - i - 1):
-            if registros[j]['PRSUC'] > registros[j + 1]['PRSUC']:
+            if debe_intercambiar(registros[j], registros[j + 1]):
                 registros[j], registros[j + 1] = registros[j + 1], registros[j]
     return registros
 
@@ -45,7 +51,7 @@ def process(ruta_del_archivo):
                 fila = registros[i]
 
                 TOTUNI += int(fila['PRCANT'])
-                TOTPES += int(fila['PRCANT']) * float(fila['PRPRE'])
+                TOTPES += calcular_importe(fila['PRCANT'], fila['PRPRE'])
                 i += 1
 
             TOTSUC += TOTUNI
