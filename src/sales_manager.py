@@ -1,4 +1,4 @@
-#  sales_manager.py
+# sales_manager.py
 import os
 
 # --- MÓDULO DE LÓGICA DE ORDENAMIENTO ---
