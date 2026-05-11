@@ -100,20 +100,21 @@ def procesar_data(data):
     print("-"*45)
     print(f"\nSucursales totales: {total_branch}, Compra total: {total_price:.2f}")
 
-print("=== Sistema de procesamiento de compras ===")
-print()
-path_csv = input("1. Indique el path del CSV: ").strip()
-if not validar_archivo(path_csv):
-    print(f"Error: no se encontro el archivo '{path_csv}'")
-    exit()
-esta_ordenado = input("2. El archivo esta ordenado (Y/N): ").strip().upper()
-if esta_ordenado == "N":
-    path_csv = ordenar_y_guardar(path_csv)
-elif esta_ordenado == "Y":
-    print("El archivo ya esta ordenado, iniciando ejecucion...")
+if __name__ == "__main__":
+    print("=== Sistema de procesamiento de compras ===")
     print()
-else:
-    print("Opcion invalida. Debe ingresar Y o N.")
-    exit()
-_, data = leer_csv(path_csv)
-procesar_data(data)
+    path_csv = input("1. Indique el path del CSV: ").strip()
+    if not validar_archivo(path_csv):
+        print(f"Error: no se encontro el archivo '{path_csv}'")
+        exit()
+    esta_ordenado = input("2. El archivo esta ordenado (Y/N): ").strip().upper()
+    if esta_ordenado == "N":
+        path_csv = ordenar_y_guardar(path_csv)
+    elif esta_ordenado == "Y":
+        print("El archivo ya esta ordenado, iniciando ejecucion...")
+        print()
+    else:
+        print("Opcion invalida. Debe ingresar Y o N.")
+        exit()
+    _, data = leer_csv(path_csv)
+    procesar_data(data)
