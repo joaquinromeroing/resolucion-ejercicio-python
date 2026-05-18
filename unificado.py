@@ -221,3 +221,8 @@ while i < len(df):
 
 print("Cantidad de sucursales:", cansuc)
 print("Total general $:", totalimp)
+
+#nueva funcion cicd
+
+def calcular_total_compra(cantidad, precio_unitario):
+    return cantidad * precio_unitario

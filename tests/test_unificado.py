@@ -88,3 +88,10 @@ def test_cantidad_sucursales_correcta(tmp_path, monkeypatch, capsys):
     salida = capsys.readouterr().out
 
     assert "Cantidad de sucursales: 2" in salida
+
+    #cicd
+    from unificado import calcular_total_compra
+
+    def test_calcular_total_compra():
+        resultado = calcular_total_compra(3, 150)
+        assert resultado == 450
