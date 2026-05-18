@@ -17,15 +17,8 @@ jobs:
       - name: Clonar repositorio
         uses: actions/checkout@v4
 
-      - name: Instalar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
+      - name: Construir imagen Docker
+        run: docker build -t supermercado-tests .
 
-      - name: Instalar dependencias
-        run: |
-          python -m pip install --upgrade pip
-          pip install pytest pytest-mock pandas
-
-      - name: Ejecutar tests
-        run: pytest tests/test_unificado.py
+      - name: Ejecutar tests en Docker
+        run: docker run supermercado-tests
