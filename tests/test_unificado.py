@@ -90,6 +90,11 @@ def test_cantidad_sucursales_correcta(tmp_path, monkeypatch, capsys):
     assert "Cantidad de sucursales: 2" in salida
 
     #cicd
+    import sys
+    from pathlib import Path
+
+    sys.path.append(str(Path(__file__).resolve().parents[1]))
+
     from unificado import calcular_total_compra
 
     def test_calcular_total_compra():
