@@ -4,8 +4,10 @@ import csv
 def calcular_importe(cantidad, precio):
     return int(cantidad) * float(precio)
 
+
 def debe_intercambiar(r1, r2):
     return r1['PRSUC'] > r2['PRSUC']
+
 
 def algoritmo_burbuja(registros):
     n = len(registros)

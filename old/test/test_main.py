@@ -1,5 +1,4 @@
-import pytest
-from app.principal import calcular_importe, debe_intercambiar, algoritmo_burbuja
+from old.app.main import calcular_importe, debe_intercambiar, algoritmo_burbuja
 
 
 def test_calcular_importe():
