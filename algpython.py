@@ -1,5 +1,10 @@
 import csv
 
+def exchange(data1, data2):
+    temp = data1
+    data1 = data2
+    data2 = temp
+
 def orderList(archive):
     archivo_for_open = open(archive, "r")
 
@@ -16,9 +21,7 @@ def orderList(archive):
         for j in range(0, n-i-1):
             # chequea condicion y hace intercambio si lo necesita
             if datos[j][0] > datos[j+1][0]:
-                temp = datos[j]
-                datos[j] = datos[j + 1]
-                datos[j + 1] = temp
+                exchange(datos[j], datos[j + 1])
 
     #una ves que la lista datos esta ordenada lo escribe en el nuevo archivo
     archivo_out = open("compras_ordenado.csv", "w", newline="")
