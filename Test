@@ -1,0 +1,56 @@
+import unittest
+from busqueda_binaria import burbuja, busqueda_binaria
+
+
+class TestBurbuja(unittest.TestCase):
+
+    def test_lista_desordenada(self):
+        resultado = burbuja([5, 3, 8, 1, 4])
+        self.assertEqual(resultado, [1, 3, 4, 5, 8])
+
+    def test_lista_ya_ordenada(self):
+        resultado = burbuja([1, 2, 3, 4, 5])
+        self.assertEqual(resultado, [1, 2, 3, 4, 5])
+
+    def test_lista_ordenada_al_reves(self):
+        resultado = burbuja([9, 7, 5, 3, 1])
+        self.assertEqual(resultado, [1, 3, 5, 7, 9])
+
+    def test_lista_un_elemento(self):
+        resultado = burbuja([42])
+        self.assertEqual(resultado, [42])
+
+    def test_lista_con_duplicados(self):
+        resultado = burbuja([4, 2, 4, 1, 2])
+        self.assertEqual(resultado, [1, 2, 2, 4, 4])
+
+
+class TestBusquedaBinaria(unittest.TestCase):
+
+    def test_numero_existe(self):
+        resultado = busqueda_binaria([1, 3, 5, 7, 9], 5)
+        self.assertTrue(resultado)
+
+    def test_numero_no_existe(self):
+        resultado = busqueda_binaria([1, 3, 5, 7, 9], 4)
+        self.assertFalse(resultado)
+
+    def test_primer_elemento(self):
+        resultado = busqueda_binaria([2, 4, 6, 8], 2)
+        self.assertTrue(resultado)
+
+    def test_ultimo_elemento(self):
+        resultado = busqueda_binaria([2, 4, 6, 8], 8)
+        self.assertTrue(resultado)
+
+    def test_lista_un_elemento_encontrado(self):
+        resultado = busqueda_binaria([10], 10)
+        self.assertTrue(resultado)
+
+    def test_lista_un_elemento_no_encontrado(self):
+        resultado = busqueda_binaria([10], 99)
+        self.assertFalse(resultado)
+
+
+if __name__ == "__main__":
+    unittest.main()
