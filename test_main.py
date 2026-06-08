@@ -1,28 +1,37 @@
-from main import binary_search, bubble_sort
+import pytest
+from main import calcular_total, producto_mas_vendido
+
+def test_calcular_total_sin_descuento():
+    compras = [
+        {"nombre": "Leche", "precio": 1200, "cantidad": 2},
+        {"nombre": "Pan", "precio": 1500, "cantidad": 1}
+    ]
+    assert calcular_total(compras) == 3900
 
 
-def test_bubble_sort_ordena_ascendente():
-    numeros = [5, 3, 8, 1, 2]
+def test_calcular_total_con_descuento():
+    compras = [
+        {"nombre": "Fernet", "precio": 8000, "cantidad": 2}
+    ]
 
-    assert bubble_sort(numeros) == [1, 2, 3, 5, 8]
-
-
-def test_bubble_sort_no_modifica_la_lista_original():
-    numeros = [4, 2, 7]
-
-    resultado = bubble_sort(numeros)
-
-    assert numeros == [4, 2, 7]
-    assert resultado == [2, 4, 7]
+    assert calcular_total(compras) == 14400
 
 
-def test_binary_search_encuentra_elemento_existente():
-    numeros = [1, 2, 3, 5, 8]
+def test_producto_mas_vendido():
+    compras = [
+        {"nombre": "Yerba", "precio": 3000, "cantidad": 1},
+        {"nombre": "Galletitas", "precio": 800, "cantidad": 5}
+    ]
+    assert producto_mas_vendido(compras) == "Galletitas"
 
-    assert binary_search(numeros, 5) is True
+
+def test_valores_negativos_lanzan_error():
+    compras = [
+        {"nombre": "Azúcar", "precio": -500, "cantidad": 1}
+    ]
+    with pytest.raises(ValueError):
+        calcular_total(compras)
 
 
-def test_binary_search_no_encuentra_elemento_inexistente():
-    numeros = [1, 2, 3, 5, 8]
-
-    assert binary_search(numeros, 4) is False
+def test_lista_vacia_producto_mas_vendido():
+    assert producto_mas_vendido([]) is None
